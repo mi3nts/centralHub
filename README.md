@@ -30,4 +30,4 @@
 - V2 new display Module 
 
 # Power Module 
-- A separate power 
+- A separate power box 
