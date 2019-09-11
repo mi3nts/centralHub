@@ -36,7 +36,7 @@ Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591); // pass in a number for the senso
 bool VEML6075Online;
 VEML6075 veml ;
 
-int groveUVPin = A0;
+int groveUVPin = A2;
 int groveLightPin = A1;
 
 uint16_t sensingPeriod =1000;
