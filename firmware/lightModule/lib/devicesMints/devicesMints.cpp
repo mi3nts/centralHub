@@ -1,7 +1,7 @@
 
 #include "devicesMints.h"
 
-void readGL001Mints(int pinIn){
+void readGL001Mints(uint8_t pinIn){
   
   String readings[1] = { \
         String(analogRead(pinIn)),\
@@ -13,7 +13,7 @@ void readGL001Mints(int pinIn){
 }
 
 
-void readGUV001Mints(int pinIn){
+void readGUV001Mints(uint8_t pinIn){
 
     int sensorValue;
     long  sum=0;
@@ -335,3 +335,47 @@ void advancedReadTSL2591Mnits(void)
     https://github.com/adafruit/Adafruit_TSL2591_Library/blob/master/examples/tsl2591/tsl2591.ino
 */
 /**************************************************************************/
+
+
+
+
+// APDS9002 ---------------------------------------
+
+float readAPDS9002Mints(uint8_t analogpin)
+{
+
+    float VoutArray[] =  {0.00191633333,  0.00565133333,   0.01916333333, 0.06967166666, 0.25331666666, 0.88945, 2.2815,   3.178,  3.83333333333};
+    float  LuxArray[] =  { 1.0108,     3.1201,  9.8051,   27.43,   69.545,   232.67,  645.11,   73.52,  1000};
+    uint8_t raw = analogRead(analogpin);
+    float voltage = raw  * (5.0 / 1023.0);
+    float luminance  = FmultiMapAPDS9002(voltage, VoutArray, LuxArray, 9);
+    String readings[3] = { String(luminance) ,String(voltage) , String(raw) };
+    sensorPrintMints("APDS9002",readings,3);
+
+}
+
+
+/**************************************************************************/
+/*
+    Taken from:
+    https://github.com/SeeedDocument/Seeed-WiKi/blob/master/docs/Grove-Luminance_Sensor.md
+*/
+/**************************************************************************/
+
+float FmultiMapAPDS9002(float val, float * _in, float * _out, uint8_t size)
+{
+    // take care the value is within range
+    // val = constrain(val, _in[0], _in[size-1]);
+    if (val <= _in[0]) return _out[0];
+    if (val >= _in[size-1]) return _out[size-1];
+
+    // search right interval
+    uint8_t pos = 1;  // _in[0] allready tested
+    while(val > _in[pos]) pos++;
+
+    // this will handle all exact "points" in the _in array
+    if (val == _in[pos]) return _out[pos];
+
+    // interpolate in the right segment for the rest
+    return (val - _in[pos-1]) * (_out[pos] - _out[pos-1]) / (_in[pos] - _in[pos-1]) + _out[pos-1];
+}

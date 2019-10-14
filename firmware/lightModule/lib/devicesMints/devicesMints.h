@@ -12,11 +12,11 @@
 
 
 // // For GUV001
-void readGUV001Mints(int pinIn);
+void readGUV001Mints(uint8_t pinIn);
 
 
 // // For GL001
-void readGL001Mints(int pinIn);
+void readGL001Mints(uint8_t pinIn);
 
 // // For SI114X
 extern SI114X SI;
@@ -47,5 +47,11 @@ void displayTSL2591DetailsMints(void);
 void configureTSL2591Mints(void);
 void advancedReadTSL2591Mnits(void);
 // Ends functions taken from:https://github.com/adafruit/Adafruit_TSL2591_Library/blob/master/examples/tsl2591/tsl2591.ino
+
+
+float readAPDS9002Mints(uint8_t analogpin);
+float FmultiMapAPDS9002(float val, float * _in, float * _out, uint8_t size);
+    // Taken from: https://github.com/SeeedDocument/Seeed-WiKi/blob/master/docs/Grove-Luminance_Sensor.md
+
 
 #endif

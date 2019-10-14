@@ -21,15 +21,6 @@ void sensorPrintMints(String sensor,String readings[],uint8_t numOfvals){
 
 
 
-void delayMints(unsigned int timeSpent,unsigned int loopInterval){
-  unsigned int loopIntervalReal = loopInterval+ 30 ;
-  unsigned int waitTime;
-  if(loopIntervalReal>timeSpent){
-    waitTime = loopIntervalReal - timeSpent;
-    delay(waitTime);
-  }
-
-}
 // Native Command
 // void serialEvent() {
 //   while (Serial.available()) {

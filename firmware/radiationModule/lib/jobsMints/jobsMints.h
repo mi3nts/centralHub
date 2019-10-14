@@ -8,7 +8,6 @@
 void initializeSerialMints();
 // void initializeSerialUSBMints();
 void sensorPrintMints(String sensor,String readings[],uint8_t numOfvals);
-void delayMints(unsigned int timeSpent,unsigned int loopInterval);
 // extern bool stringComplete;
 // extern String inputString;
 // void commandReadMints();

@@ -36,12 +36,15 @@ Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591); // pass in a number for the senso
 bool VEML6075Online;
 VEML6075 veml ;
 
-int groveUVPin = A2;
-int groveLightPin = A1;
+uint8_t groveLuminancePin = A0;
+uint8_t groveLightPin = A1;
+uint8_t groveUVPin = A2;
+
 
 uint16_t sensingPeriod =1000;
 uint16_t initPeriod = 1500;
 
+unsigned long startTime;
 
 void setup() {
 
@@ -74,6 +77,9 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop(){
+    startTime  = millis();
+
+//
 
   // TMG.readData();
   
@@ -123,6 +129,10 @@ void loop(){
      readGUV001Mints(groveUVPin);
    
 
+  delay(sensingPeriod);
+     readAPDS9002Mints(groveLuminancePin);
+
+    delayMints(millis() - startTime,10000);
 }
 
 
