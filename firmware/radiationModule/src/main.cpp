@@ -18,7 +18,7 @@ unsigned long initializationPeriod = 1500;
 void setup() {
   initializeSerialMints();
   delay(1000);
-  PPD42NSOnline = initializePPD42NSDuoMints();
+  PPD42NSOnline      = initializePPD42NSDuoMints();
   delay(1000);
   LIBRADOnline       = initializeLIBRADMints();
 }
