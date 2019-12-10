@@ -54,7 +54,7 @@ macAddress            = findMacAddress()
 # macAddress          = get_mac_address(interface="docker0").replace(":","")  #LAB Machine
 # macAddress          = get_mac_address(interface="enp1s0").replace(":","")
 # macAddress            = get_mac_address(interface="eth0").replace(":","") # XU4
-latestOff             = True
+latestDisplayOn       = True
 gpsPort               = findPort("GPS/GNSS Receiver")
 
 

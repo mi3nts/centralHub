@@ -30,20 +30,19 @@ import math
 
 macAddress    = mD.macAddress
 dataFolder    = mD.dataFolder
-latestOff     = mD.latestOff
+latestDisplayOn    = mD.latestDisplayOn
 
 
 
 
 def sensorFinisher(dateTime,sensorName,sensorDictionary):
-    #Getting Write Path
+    # Getting Write Path
     writePath = getWritePath(sensorName,dateTime)
-    exists = directoryCheck(writePath)
+    exists    = directoryCheck(writePath)
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
-    if(not(latestOff)):
+    if(latestDisplayOn):
        mL.writeHDF5Latest(writePath,sensorDictionary,sensorName)
-
     print("-----------------------------------")
     print(sensorName)
     print(sensorDictionary)
@@ -54,10 +53,10 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
 def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
     #Getting Write Path
     writePath = getWritePathIP(sensorName,dateTime)
-    exists = directoryCheck(writePath) 
+    exists = directoryCheck(writePath)
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
-    if(not(latestOff)):
+    if(latestDisplayOn):
        mL.writeHDF5Latest(writePath,sensorDictionary,sensorName)
 
     print("-----------------------------------")
