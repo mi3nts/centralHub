@@ -8,12 +8,41 @@ import os
 import csv
 import deepdish as dd
 import time
-
+import json
 
 from mintsXU4 import mintsDefinitions as mD
 
 dataFolder      = mD.dataFolder
 latestDisplayOn = mD.latestDisplayOn
+macAddress      = mD.macAddress
+
+def writeJSONLatest(sensorDictionary,sensorName):
+    directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
+    print(directoryIn)
+    try:
+        with open(directoryIn,'w') as fp:
+            json.dump(sensorDictionary, fp)
+
+    except:
+        print("Json Data Not Written")
+
+
+
+def readJSONLatestAll(sensorName):
+    try:
+        directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
+        with open(directoryIn, 'r') as myfile:
+            # dataRead=myfile.read()
+            dataRead=json.load(myfile)
+
+        time.sleep(0.01)
+        return dataRead, True;
+    except:
+        print("Data Conflict!")
+        return "NaN", False
+
+
+
 
 # def writeHDF5Latest(writePath,sensorDictionary,sensorName):
 #     try:
@@ -45,15 +74,7 @@ latestDisplayOn = mD.latestDisplayOn
 #         print("Data Conflict!")
 #         return {}, False
 
-def writeJSONLatest(sensorDictionary,sensorName):
-    # print(writePath)
-    directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
-    # print(directoryIn)
-    try:
-    	with open(directoryIn,'w') as fp:
-    	    json.dump(sensorDictionary, fp)
-    except:
-        print("Data Conflict!")
+
 
 # def writeJSONLatestUnpublished(sensorDictionary,sensorName):
 #     # print(writePath)
@@ -65,14 +86,3 @@ def writeJSONLatest(sensorDictionary,sensorName):
 #         	    json.dump(sensorDictionary, fp)
 #         except:
 #             print("Data Conflict!")
-
-
-def readJSONLatestAll(sensorName):
-    try:
-        directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
-        with open(directoryIn, 'r') as myfile:
-            # dataRead=myfile.read()
-            dataRead=json.load(myfile)
-
-        time.sleep(0.01)
-        return dataRead, True

@@ -27,6 +27,16 @@ def findNanoPorts():
 
     return outPorts
 
+def findSabrentPorts():
+    ports = list(serial.tools.list_ports.comports())
+    outPorts = []
+    for p in ports:
+        currentPort = str(p[2])
+        if(currentPort.find("PID=067B")>=0):
+            outPorts.append(str(p[0]).split(" ")[0])
+    return outPorts
+
+
 
 def findMacAddress():
     macAddress= get_mac_address(interface="eth0")
@@ -48,6 +58,8 @@ def findMacAddress():
 dataFolder            = "/home/teamlary/mintsData/raw"
 duePort               = findDuePort()
 nanoPorts             = findNanoPorts()
+sabrentPorts          = findSabrentPorts()
+
 show2Port             = findPort("CP2104 USB to UART Bridge Controller")
 
 macAddress            = findMacAddress()

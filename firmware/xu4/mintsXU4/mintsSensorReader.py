@@ -42,7 +42,7 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
     if(latestDisplayOn):
-       mL.writeHDF5Latest(writePath,sensorDictionary,sensorName)
+       mL.writeJSONLatest(sensorDictionary,sensorName)
     print("-----------------------------------")
     print(sensorName)
     print(sensorDictionary)
@@ -57,7 +57,7 @@ def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
     if(latestDisplayOn):
-       mL.writeHDF5Latest(writePath,sensorDictionary,sensorName)
+       mL.writeJSONLatest(sensorDictionary,sensorName)
 
     print("-----------------------------------")
     print(sensorName)
@@ -117,8 +117,8 @@ def sensorSend(sensorID,sensorData,dateTime):
         GUV001Write(sensorData, dateTime)
     if(sensorID=="APDS9002"):
         APDS9002Write(sensorData, dateTime)
-
-
+    if(sensorID=="HM3301"):
+        HM3301Write(sensorData, dateTime)
 
 
 
@@ -506,7 +506,18 @@ def APDS9002Write(sensorData, dateTime):
         sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 
-
+def HM3301Write(sensorData, dateTime):
+    dataOut    = sensorData.split(':')
+    sensorName = "HM3301"
+    dataLength = 3
+    if(len(dataOut) ==(dataLength +1)):
+        sensorDictionary = OrderedDict([
+                ("dateTime"           ,str(dateTime)),
+                ("pm1"          ,dataOut[0]),
+                ("pm2_5"          ,dataOut[1]),
+                ("pm10"          ,dataOut[2])
+        	     ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 
 
