@@ -28,16 +28,16 @@ def main(portNum):
 	line = []
 
 	while True:
-        for c in ser.read():
-            line.append(chr(c))
+    	for c in ser.read():
+        	line.append(chr(c))
             # print(line)
-            if chr(c) == stringFind:
-                dataString     = (''.join(line))
-                dateTime  = datetime.datetime.now()
-                print(dataString)
+        	if chr(c) == stringFind:
+            	dataString     = (''.join(line))
+            	dateTime  = datetime.datetime.now()
+            	print(dataString)
 				TB108LWrite(dataString,dateTime)
 	        	line = []
-                break
+            	break
 	        except:
          	        print("Incomplete String Read")
                 	line = []
