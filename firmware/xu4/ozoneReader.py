@@ -28,19 +28,20 @@ def main(portNum):
 	line = []
 
 	while True:
-    	for c in ser.read():
-        	line.append(chr(c))
-        	if chr(c) == stringFind:
-            	dataString     = (''.join(line))
-            	dateTime  = datetime.datetime.now()
-            	print(dataString)
-				TB108LWrite(dataString,dateTime)
-	        	line = []
-            	break
-	        except:
-         		print("Incomplete String Read")
-                line = []
-    	ser.close()
+		try:
+			for c in ser.read():
+        		line.append(chr(c))
+        		if chr(c) == stringFind:
+            		dataString     = (''.join(line))
+            		dateTime  = datetime.datetime.now()
+            		print(dataString)
+					TB108LWrite(dataString,dateTime)
+	        		line = []
+            		break
+		except:
+        	print("Incomplete String Read")
+            line = []
+    ser.close()
 
 
 if __name__ == "__main__":
