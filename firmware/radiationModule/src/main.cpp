@@ -35,7 +35,7 @@ void loop() {
 
   if(LIBRADOnline)
       {
-        readLIBRADMints(5);
+        readLIBRADMints(30);
       }
 
 }

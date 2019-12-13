@@ -8,51 +8,41 @@ import time
 import sys
 
 dataFolder    = mD.dataFolder
-
-ozonePort     = mD.ozonePort  
-
+ozonePort     = mD.ozonePort
 
 
+def main(portNum):
+    if(len(nanoPorts)>0):
 
+        ser = serial.Serial(
+        port= nanoPorts[portNum],\
+        baudrate=2400,\
+        parity  =serial.PARITY_NONE,\
+        stopbits=serial.STOPBITS_ONE,\
+        bytesize=serial.EIGHTBITS,\
+        timeout=0)
 
+        print(" ")
+        print("Connected to: " + ser.portstr)
+        print(" ")
 
+        #this will store the line
+        line = []
 
-
-
-
-
-def main(portN                     line.append(chr(c))
-                        # print(chr(c))
-                        if chr(c) == '\n':
-                            dataString     = (''.join(line))
-                            dataStringPost = dataString.replace('~', '')
-                            print(dataStringPost)
-                            # mSR.dataSplit(dataStringPost,datetime.datetime.now())
-                            line = []
-                            break
-                except:
-                    print("Incomplete String Read")
-                    line = []
-
-        if sensor == "ozone":
-
-            ser.baudrate = 2400
-            line = []
-            while True:
-                try:
-                    for c in ser.read():
-                        line.append(chr(c))
-                        # print(chr(c))
-                        if chr(c) == '\n':
-                            dataString     = (''.join(line))
-                            print(dataString)
-                            # mSR.dataSplit(dataStringPost,datetime.datetime.now())
-                            line = []
-                            break
-                except:
-                    print("Incomplete String Read")
-                    line = []
-
+        while True:
+            try:
+                for c in ser.read():
+                    line.append(chr(c))
+                    if chr(c) == '\n':
+                        dataString     = (''.join(line)).replace("\n","").replace("\r","")
+                        dateTime  = datetime.datetime.now()
+                        print(dataString)
+                        TB108LWrite(dataString,dateTime)
+                        line = []
+                    break
+            except:
+                print("Incomplete String Read")
+                line = []
         ser.close()
 
 
@@ -60,7 +50,5 @@ if __name__ == "__main__":
     print("=============")
     print("    MINTS    ")
     print("=============")
-    portNum = int(sys.argv[1])
-    print("Number of Sabrent Devices: {0}".format(len(sabrentPorts)))
-    print("Monitoring Sabrent Device on port: {0}".format(sabrentPorts[portNum]))
-    main(portNum)
+    print("Monitoring Ozone Sensor on port: {0}".format(ozonePort))
+    main(ozonePort)
