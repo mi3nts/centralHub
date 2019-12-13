@@ -30,7 +30,6 @@ def main(portNum):
 	while True:
     	for c in ser.read():
         	line.append(chr(c))
-            # print(line)
         	if chr(c) == stringFind:
             	dataString     = (''.join(line))
             	dateTime  = datetime.datetime.now()
@@ -39,9 +38,9 @@ def main(portNum):
 	        	line = []
             	break
 	        except:
-         	        print("Incomplete String Read")
-                	line = []
-        ser.close()
+         		print("Incomplete String Read")
+                line = []
+    	ser.close()
 
 
 if __name__ == "__main__":
