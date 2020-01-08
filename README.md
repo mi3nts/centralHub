@@ -23,7 +23,7 @@
 - USB Mic 
 - Gravity Sound Level Monitor 
 
-# Radition Module
+# Lightning and Radition Module
 - Radiation Sensor 
 
 # Display Module 
