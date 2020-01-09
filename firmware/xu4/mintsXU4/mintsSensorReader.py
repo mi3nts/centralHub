@@ -520,12 +520,19 @@ def HM3301Write(sensorData, dateTime):
         sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 
-
-
-
-
-
-
+def TB108LWrite(sensorData, dateTime):
+    dataOut    = sensorData.split(',')
+    sensorName = "TB108L"
+    dataLength = 4
+    if(len(dataOut) ==(dataLength)):
+        sensorDictionary = OrderedDict([
+                ("dateTime"       ,str(dateTime)),
+                ("ozone"          ,dataOut[0]),
+                ("temperature"    ,dataOut[1]),
+                ("pressure"       ,dataOut[2]),
+                ("voltage"        ,dataOut[3])
+        	     ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 def getDeltaTime(beginTime,deltaWanted):
     return (time.time() - beginTime)> deltaWanted

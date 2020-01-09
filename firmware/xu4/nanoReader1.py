@@ -27,9 +27,9 @@ def main():
             try:
                 for c in ser.read():
                     line.append(chr(c))
-                    if chr(c) == '~':
-                        dataString     = (''.join(line))
-                        dataStringPost = dataString.replace('~', '')
+                    if chr(c) == '\n': # line ends at newline character
+                    	dataString = ''.join(line)
+                        dataStringPost = dataString.replace('\n', '')
                         print(dataStringPost)
                         mSR.dataSplit(dataStringPost,datetime.datetime.now())
                         line = []
