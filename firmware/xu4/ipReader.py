@@ -16,12 +16,12 @@ dataFolder = mD.dataFolder
 def main():
 
     sensorName = "IP"
-    
     dateTimeNow = datetime.datetime.now()
-    
+    print("Gaining the Public and Private IPs")
+
     publicIp = get('https://api.ipify.org').text
     #localIp  = ni.ifaddresses('docker0')[ni.AF_INET][0]['addr'] # Lab Machine
-    localIp = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'] # Odroid XU4 
+    localIp = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'] # Odroid XU4
 
     sensorDictionary =  OrderedDict([
             ("dateTime"     , str(dateTimeNow)),
@@ -32,4 +32,7 @@ def main():
     mSR.sensorFinisherIP(dateTimeNow,sensorName,sensorDictionary)
 
 if __name__ == "__main__":
-   main()
+    print("=============")
+    print("    MINTS    ")
+    print("=============")
+    main()

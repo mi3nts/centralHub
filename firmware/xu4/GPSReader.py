@@ -12,7 +12,8 @@ from collections import OrderedDict
 dataFolder = mD.dataFolder
 # duePort    = mD.duePort
 gpsPort    =  mD.gpsPort
-#
+
+baudRate  = 9600
 
 
 
@@ -22,7 +23,7 @@ def main():
     reader = pynmea2.NMEAStreamReader()
     ser = serial.Serial(
     port= gpsPort,\
-    baudrate=9600,\
+    baudrate=baudRate,\
     parity  =serial.PARITY_NONE,\
     stopbits=serial.STOPBITS_ONE,\
     bytesize=serial.EIGHTBITS,\
@@ -59,4 +60,8 @@ def main():
 
 
 if __name__ == "__main__":
-   main()
+    print("=============")
+    print("    MINTS    ")
+    print("=============")
+    print("Monitoring Ozone Sensor on port: {0}".format(gpsPort[0])+ " with baudrate " + str(baudRate))
+    main()
