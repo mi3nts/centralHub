@@ -35,6 +35,7 @@ def main(portNum):
                     if chr(c) == '~':
                         dataString     = (''.join(line))
                         dataStringPost = dataString.replace('~', '')
+                        print("================")
                         print(dataStringPost)
                         mSR.dataSplit(dataStringPost,datetime.datetime.now())
                         line = []
