@@ -10,7 +10,7 @@ sleep 5
 python3 GPSReader.py &
 sleep 5
 python3 ipReader.py
-sleep 5 
+sleep 5
 
 # python3 centralNodeReaderNano.py &
 # sleep 10

@@ -37,16 +37,16 @@ latestDisplayOn    = mD.latestDisplayOn
 
 def sensorFinisher(dateTime,sensorName,sensorDictionary):
     # Getting Write Path
+    print("-----------------------------------")
     writePath = getWritePath(sensorName,dateTime)
     exists    = directoryCheck(writePath)
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
     if(latestDisplayOn):
        mL.writeJSONLatest(sensorDictionary,sensorName)
-    print("-----------------------------------")
     print(sensorName)
     print(sensorDictionary)
-
+    print("-----------------------------------")
 
 
 
