@@ -17,7 +17,7 @@ def main():
 
     sensorName = "IP"
     dateTimeNow = datetime.datetime.now()
-    print("Gaining the Public and Private IPs")
+    print("Gaining Public and Private IPs")
 
     publicIp = get('https://api.ipify.org').text
     #localIp  = ni.ifaddresses('docker0')[ni.AF_INET][0]['addr'] # Lab Machine
