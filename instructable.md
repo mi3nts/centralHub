@@ -17,6 +17,7 @@ The central hub comprises of the following modules
   
   ## Ozone Module (Ashen)
   
+  
   ## Lora Module (John and Lakitha)
   
   ## CPU Module(Lakitha)
