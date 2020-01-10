@@ -17,6 +17,11 @@ The central hub comprises of the following modules
   
   ## Ozone Module (Ashen)
   
+  ### Ashen
+  
+Create an instructable for both the power module and the ozone module. Have drafts in there for where you want to drill the holes for the wiring and have some diagrams in for the instructable.  
+  
+  
   ## Lora Module (John and Lakitha)
   
   ## CPU Module(Lakitha)
