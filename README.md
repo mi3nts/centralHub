@@ -23,11 +23,13 @@
 
 ## Sound and Lightning Module 
 - USB Mic: Need to buy 10
-- Gravity Sound Level Monitor 
+- Gravity Sound Level Monitor - Need to buy 10 
+- Gravity Lightning Sensor - Need to buy 10 
+
 
 
 # Main Module
-- XU4
+- XU4 
 - Radiation Sensor 
 - USB Hub 
 - SD Card (16 GB)   
