@@ -1,33 +1,44 @@
 # centralHub
+
 ## air Module 
- - OPCN3
- - SCD30
- - BME280 
- - MGS
- - PPDS - goes with the radiation module 
- - HM3301 
+ - Weather Shield : Buy 10 
+ - OPCN3  :
+ - SCD30  :
+ - HM3301 : 
+ - BME280 :
+ - MGS001 :  
+ 
+ 
+ ## light Module 
+- Camera                    :  Need to buy 10 
+- GUVA-S12SD                :  Need to buy 8 
+- Grove - Light Sensor v1.2 :  Need to buy 8
+- TSL2591                   :  
+- VEML6075                  :
+- AS7262                    :
+- TMG3993                   :
+- APDS-9002                 : 
+- Si1145                    : 
 
-## light Module 
-- Camera 
-- TSL2591
-- VEML6075
-- AS7262
-- GUVA-S12SD
-- TMG3993
-- APDS-9002
-- GUVA-S12D
-- Si1145
-- Grove - Light Sensor v1.2
 
-## Mic Module 
-- USB Mic 
+## Sound and Lightning Module 
+- USB Mic: Need to buy 10
 - Gravity Sound Level Monitor 
 
-# Lightning and Radition Module
-- Radiation Sensor 
 
-# Display Module 
-- V2 new display Module 
+# Main Module
+- XU4
+- Radiation Sensor 
+- USB Hub 
+- SD Card (16 GB)   
+- Water proof Ethernet Inputs : Has to buy 30 
+- V2 Display (buy 10)
+- Ethernet Cable Spool 
+
 
 # Power Module 
-- A separate power box 
+- 24 V power pack 
+- 5 v step down 
+- 12 v step down 
+- Power inlet 
+- Plug 
