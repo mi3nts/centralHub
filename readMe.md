@@ -25,18 +25,18 @@
 - Gravity Sound Level Monitor  
 - Gravity Lightning Sensor    
 
-# Main Module
+## Main Module
 - XU4  
 - Radiation Sensor   
 - USB Hub
 - SD Card
 
-# Lora Module 
+## Lora Module 
 - Rasberry Pi with LoRa 
 - Mobile modem 
 - 5 port switch
 
-# Power Module 
+## Power Module 
 - 24 V power pack
 - 5 v step down  
 - 12 v step down 
