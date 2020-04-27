@@ -1,6 +1,8 @@
-# centralHub
+# CentralHub
 
-## air Module 
+The Central hub contains the following modules and it acts as the central data center for Lora Packages located near by. 
+
+## Air Module 
  - Weather Shield
  - OPCN3  
  - SCD30  
