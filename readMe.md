@@ -2,7 +2,7 @@
 ![central Hub](https://github.com/mi3nts/centralHub/blob/master/res/centralHub.png)
 </br>
 </br>
-The Central hub contains the following modules and it acts as the central data center for Lora Packages located near by. 
+The Central hub contains the following modules and it acts as the central data center for [LoRa packages](https://github.com/mi3nts/loRaNode) located near by. 
 
 ## Air Module 
  - Weather Shield
