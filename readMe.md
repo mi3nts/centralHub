@@ -32,7 +32,9 @@
 - SD Card
 
 # Lora Module 
-- 5 port switch - Amazon
+- Rasberry Pi with LoRa 
+- Mobile modem 
+- 5 port switch
 
 # Power Module 
 - 24 V power pack
