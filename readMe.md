@@ -1,6 +1,7 @@
 # CentralHub
 ![central Hub](https://github.com/mi3nts/centralHub/blob/master/res/centralHub.png)
 </br>
+</br>
 The Central hub contains the following modules and it acts as the central data center for Lora Packages located near by. 
 
 ## Air Module 
@@ -11,7 +12,7 @@ The Central hub contains the following modules and it acts as the central data c
  - BME280 
  - MGS001 
   
- ## light Module 
+ ## Light Module 
 - Camera                    
 - GUVA-S12SD                
 - Grove - Light Sensor v1.2 
