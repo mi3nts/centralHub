@@ -20,8 +20,23 @@ def main():
     print("Gaining the Public and Private IPs")
 
     publicIp = get('https://api.ipify.org').text
-    #localIp  = ni.ifaddresses('docker0')[ni.AF_INET][0]['addr'] # Lab Machine
-    localIp = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'] # Odroid XU4
+
+    try:
+    	localIp  = ni.ifaddresses('docker0')[ni.AF_INET][0]['addr'] # Lab Machine
+    except:
+   	 print("An exception occurred")
+
+    try:
+        localIp  = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'] # Lab Machine
+    except:
+         print("An exception occurred")
+
+    try:
+        localIp  = ni.ifaddresses('wlan0')[ni.AF_INET][0]['addr'] # Lab Machine
+    except:
+         print("An exception occurred")
+    if (localIp == None):
+         localIp = "unknown"
 
     sensorDictionary =  OrderedDict([
             ("dateTime"     , str(dateTimeNow)),
