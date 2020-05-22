@@ -10,7 +10,7 @@
 #include <Adafruit_I2CDevice.h>
 #include <Adafruit_I2CRegister.h>
 
-#include "Adafruit_AS726x.h"
+#include <Adafruit_AS726x.h>
 #include "Adafruit_TSL2591.h"
 #include <SparkFun_VEML6075_Arduino_Library.h>
 
@@ -56,19 +56,24 @@ void setup() {
 
   // SI1145.Begin();
 
-
+  Serial.println("initializing AS7262");
   delay(initPeriod);
   AS7262Online = initializeAS7262Mints();
 
+  Serial.println("initializing TSL2591");
   delay(initPeriod);
   TSL2591Online      = initializeTSL2591Mints();
 
+  Serial.println("initializing VEML6075");
   delay(initPeriod);
   VEML6075Online      = initializeVEML6075Mints();
 
+  Serial.println("initializing TMG39931");
   delay(initPeriod);
   TMG39931Online      = initializeTMG39931Mints();
 
+
+  Serial.println("initializing SII4X");
   delay(initPeriod);
   SI114XOnline      = initializeSI114XMints();
 
@@ -82,7 +87,7 @@ void loop(){
 //
 
   // TMG.readData();
-  
+
   // Serial.print("//--------------------------------------//\r\n");
   // Serial.print("Vis: "); Serial.println(SI1145.ReadVisible());
   // Serial.print("IR: "); Serial.println(SI1145.ReadIR());
@@ -127,13 +132,10 @@ void loop(){
 
   delay(sensingPeriod);
      readGUV001Mints(groveUVPin);
-   
+
 
   delay(sensingPeriod);
      readAPDS9002Mints(groveLuminancePin);
 
     delayMints(millis() - startTime,10000);
 }
-
-
-

@@ -63,33 +63,29 @@ def findMacAddress():
     if (macAddress!= None):
         return macAddress.replace(":","")
 
+
     return "xxxxxxxx"
 
 
 
-dataFolder            = "/home/teamlary/mintsData/raw"
-duePort               = findDuePort()
+dataFolder            = "/home/rxhf/mintsData/raw"
+
 nanoPorts             = findNanoPorts()
-ozonePort             = findOzonePort()
-show2Port             = findPort("CP2104 USB to UART Bridge Controller")
 macAddress            = findMacAddress()
 latestDisplayOn       = True
-gpsPort               = findPort("GPS/GNSS Receiver")
+
+
+
 
 
 if __name__ == "__main__":
     # the following code is for debugging
     # to make sure everything is working run python3 mintsDefinitions.py 
-    print("Mac Address: {0}".format(macAddress))
-    print("Data Folder: {0}".format(dataFolder))
-    print("Due Port   : {0}".format(duePort))
-    print("Ozone Port : {0}".format(ozonePort))
-    print("GPS Port   : {0}".format(gpsPort))
-    print("Show2 Port : {0}".format(show2Port))
-    print("Latest On  : {0}".format(latestDisplayOn))
-
+    print("Mac Address    : {0}".format(macAddress))
+    print("Data Folder    : {0}".format(dataFolder))
+    print("Latest On      : {0}".format(latestDisplayOn))
     #-------------------------------------------#
-    print("Nano Ports :")
+    print("Arduino Nanoes :")
     for dev in nanoPorts:
         print("\t{0}".format(dev))
 
