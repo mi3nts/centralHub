@@ -16,6 +16,9 @@ Number | Label | Description |
 
 
 Dimensions: 60mm x 43mm 
-Measurement Range: 30dBA ~ 130dBA |
-Input Voltage: 3.3 ~ 5.0V |
-Output Voltage: 0.6 ~ 2.6V |
+
+Measurement Range: 30dBA ~ 130dBA 
+
+Input Voltage: 3.3 ~ 5.0V 
+
+Output Voltage: 0.6 ~ 2.6V 
