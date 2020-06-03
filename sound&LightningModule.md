@@ -10,7 +10,7 @@ Number | Label | Description |
 2 | + | Power VCC (3.3~5.0V) |
 3 | - | Power GND (0V) |
 
-<img src="https://raw.githubusercontent.com/DFRobot/DFRobotMediaWikiImage/master/Image/SoundLevelMeterBoardConnector.png" width="600" height="400">
+<img src="https://raw.githubusercontent.com/DFRobot/DFRobotMediaWikiImage/master/Image/SoundLevelMeterBoardConnector.png" width="388" height="275">
 
 ### Sensor Specifications:
 
