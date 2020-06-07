@@ -33,9 +33,9 @@ Number | Label | Description |
 ## DFRobot Lightning Distance Sensor (SEN0290:)
 
 #### This sensor uses AMS AS3935 Franklin lightning sensor IC and Coilcraft's MA5532-AE antenna to examine lightning distance, intensity, and frequency both indoors or outdoors.
-<img src="https://dfimg.dfrobot.com//data/SEN0290/SEN0290.jpg?imageView2/1/w/564/h/376" width="400" height="240">
 
 ### Sensor Specifications:
+<img src="https://dfimg.dfrobot.com//data/SEN0290/SEN0290.jpg?imageView2/1/w/564/h/376" width="400" height="240">
 
 Dimensions: 30.0mm x 22.0mm
 
@@ -69,9 +69,8 @@ Number | Label | Description |
 
 #### The Pro Audio External Lavalier Microphone is a high quality mic that's ideal for video use. It even comes with a lapel clip to connect onto objects easily, as well as a foam windscreen to keep out unwanted noise. 
 
-<img src="https://cdn.shopify.com/s/files/1/0260/8948/8444/products/dp-lm20gp_540x.png?v=1564762192">
-
 ### Microphone Specifications:
+<img src="https://cdn.shopify.com/s/files/1/0260/8948/8444/products/dp-lm20gp_540x.png?v=1564762192">
 
 Frequency Range: 35Hz ~ 18KHz 
 
