@@ -4,9 +4,10 @@
 
 #### The SEN0232 from DFRobot is a sensor that can accurately measure the sound levels of it's surrounding enviornment.
 #### It is a plug and play that uses a low noise microphone.
-<img src="https://dfimg.dfrobot.com//data/SEN0232/SEN0232-6W4A9955.jpg?imageView2/1/w/564/h/376" width="500" height="310">
 
 ### Sensor Specifications:
+
+<img src="https://dfimg.dfrobot.com//data/SEN0232/SEN0232-6W4A9955.jpg?imageView2/1/w/564/h/376" width="500" height="310">
 
 Dimensions: 60mm x 43mm 
 
