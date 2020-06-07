@@ -48,9 +48,9 @@ Intensity Detection Resolution: 21 bits
 
 Interface: Gravity I2C (Addresses: 0x03, 0x02, 0x01)
 
-<img src="https://raw.githubusercontent.com/DFRobot/Wiki/SEN0290/DFRobot_SEN0290/image/SEN0290_overview.png" width="400" height="267">
-
 ### Board Overview:
+
+<img src="https://raw.githubusercontent.com/DFRobot/Wiki/SEN0290/DFRobot_SEN0290/image/SEN0290_overview.png" width="400" height="267">
 
 Number | Label | Description |
 ----------- | ----- | -------- |
