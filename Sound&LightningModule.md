@@ -16,6 +16,8 @@ Input Voltage: 3.3 ~ 5.0V
 
 Output Voltage: 0.6 ~ 2.6V 
 
+### Board Overview:
+
 <img src="https://raw.githubusercontent.com/DFRobot/DFRobotMediaWikiImage/master/Image/SoundLevelMeterBoardConnector.png" width="388" height="275">
 
 
@@ -45,6 +47,20 @@ Distance Detection Resolution: 1 ~ 4 km
 Intensity Detection Resolution: 21 bits
 
 Interface: Gravity I2C (Addresses: 0x03, 0x02, 0x01)
+
+<img src="https://raw.githubusercontent.com/DFRobot/Wiki/SEN0290/DFRobot_SEN0290/image/SEN0290_overview.png" width="400" height="267">
+
+### Board Overview:
+
+Number | Label | Description |
+----------- | ----- | -------- |
+1 | VCC | Power VCC（3.3 ~ 5.5V） |
+2 | GND | Power GND |
+3 | SCL | I2C clock signal | 
+4 | SDA | I2C data signal |
+5 | ADDR | I2C address DIP switch |
+6 | IRQ | Lightning alarm interrupt pin |
+7 | PWR | Power indicator (red) | 
 
 
 
