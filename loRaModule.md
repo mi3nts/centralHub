@@ -55,5 +55,22 @@ Then restart the system.
 
 On your browser type in the ip address of the Lora Gateway(Rasberry Pi) 
 
+Then go to the application tab and create an application under the credentials given below
+
+<Add Image>
+ 
+Under the application created click on the table icon. Here you can register your Lora Nodes. 
+
+
+ 
+  
+ 
+
+
+
+
+
+
+
 
 
