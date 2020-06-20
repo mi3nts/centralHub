@@ -1,5 +1,6 @@
+# Lora Module 
 
-#### Setting up the External hard drive
+## Setting up the External hard drive
 
 - Checking if the HD is connected 
 ```
@@ -46,7 +47,13 @@ Make sure to get the spacing right
 Comment the SD Boot 
 ```
 #/dev/mmcblk0p7  /               ext4    defaults,noatime  0       1
-
 ```
 
 Then restart the system.
+
+## Registering Lora Nodes
+
+On your browser type in the ip address of the Lora Gateway(Rasberry Pi) 
+
+
+
