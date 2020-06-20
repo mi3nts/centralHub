@@ -6,6 +6,13 @@
 sudo apt-get install lshw
 sudo lshw -class disk -short 
 ```
+Output should look like this.
+```
+H/W path        Device     Class      Description
+=================================================
+/1/1/5/0.0.0    /dev/sda   disk       1TB My Passport 25E1
+```
+
 Be sure the hard drive you want to use is formatted in the **_ext4_** filesystem. 
 
 - Mounting the HD
