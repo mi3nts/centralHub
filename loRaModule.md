@@ -3,6 +3,7 @@
 
 - Checking if the HD is connected 
 ```
+sudo apt-get install lshw
 sudo lshw -class disk -short 
 ```
 Be sure the hard drive you want to use is formatted in the **_ext4_** filesystem. 
