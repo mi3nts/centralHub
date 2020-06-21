@@ -34,7 +34,7 @@
 -I/home/teamlary/.platformio/packages/framework-arduinoavr/cores/arduino
 -I/home/teamlary/.platformio/packages/framework-arduinoavr/variants/eightanaloginputs
 -I/home/teamlary/.platformio/packages/tool-unity
--DPLATFORMIO=40303
+-DPLATFORMIO=40304
 -DARDUINO_AVR_NANO
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR

@@ -10,10 +10,10 @@
 
 #define CONV_FACTOR 0.00812
 
-extern uint8_t PPD42NSPinMid;
-extern uint8_t PPD42NSPinPM10;
-bool initializePPD42NSDuoMints();
-void readPPD42NSDuoMints(uint8_t sampleTimeSeconds);
+// extern uint8_t PPD42NSPinMid;
+// extern uint8_t PPD42NSPinPM10;
+// bool initializePPD42NSDuoMints();
+// void readPPD42NSDuoMints(uint8_t sampleTimeSeconds);
 
 
 extern uint8_t LIBRADPin;
