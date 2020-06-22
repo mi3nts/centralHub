@@ -7,13 +7,11 @@ import pickle
 from skimage import io, color
 import cv2
 
-from mintsXU4 import mintsSkyCamReader as mSCR
-from mintsXU4 import mintsSensorReader as mSR
-from mintsXU4 import mintsDefinitions as mD
-
+from mintsJetson import mintsSkyCamReader as mSCR
+from mintsJetson import mintsSensorReader as mSR
+from mintsJetson import mintsDefinitions as mD
 
 dataFolder = mD.dataFolder
-
 
 def main():
     # edited april 16 th
