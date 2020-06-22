@@ -61,10 +61,36 @@ Then go to the application tab and create an application under the credentials g
 Under the application created click on the table icon. Here you can register your Lora Nodes. 
 ![Lora Register 2](res/lora2.png)
 
- 
-  
- 
+# Jetson 
+## insatall Dependancies
+```
+sudo apt-get install screen
+sudo apt-get install python3-pip
+sudo pip3 install getmac
+sudo pip3 install pyserial
+sudo pip3 install netifaces
+sudo pip3 install pynmea2
+```
+## Edit crontab with Nano 
+export VISUAL=nano; crontab -e
 
+# Adding nano previlegges  
+
+
+
+
+# Pi 
+## insatall Dependancies
+```
+sudo apt-get install screen
+sudo apt-get install python3-pip
+sudo pip3 install getmac
+sudo pip3 install pyserial
+sudo pip3 install netifaces
+sudo pip3 install pynmea2
+```
+## Edit crontab with Nano 
+export VISUAL=nano; crontab -e
 
 
 
