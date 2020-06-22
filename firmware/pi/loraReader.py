@@ -18,8 +18,8 @@ gatewayAddr      = mD.macAddress
 gatewayDirectory = dataFolder + "/" + gatewayAddr +"/"
 
 def main():
-    global gatewayAddr
-    # global sensorDataBuffer
+    #global gatewayAddr
+    global sensorDataBuffer
 
     # in case of crash, creates record of last entry
     recordSave = 'record.txt'
