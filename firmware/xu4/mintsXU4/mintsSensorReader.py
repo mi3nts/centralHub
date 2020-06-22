@@ -33,8 +33,6 @@ dataFolder    = mD.dataFolder
 latestDisplayOn    = mD.latestDisplayOn
 
 
-
-
 def sensorFinisher(dateTime,sensorName,sensorDictionary):
     # Getting Write Path
     print("-----------------------------------")
