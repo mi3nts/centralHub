@@ -112,10 +112,14 @@ sudo pip3 install pynmea2
 2,4,6,8,12,14,16,18,22,24,26,28,32,34,36,38,42,44,46,48,52,54,56,58 * * * * cd /home/teamlary/gitHubRepos/CentralHub/firmware/jetson && python3 skyCamReaderNoSave.py
 */5 * * * * cd /home/teamlary/gitHubRepos/centralHub/firmware/jetson && python3 deleter.py
 ```
---
+
 ## LoRaWAN Gatewey:
 
 This kit provides all the basic tools needed to collect and transfer data among all your LoRa nodes.
+
+<img src="https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comseeedimg2017-04npjxt95kqxosd6stvkza0prn.jpg" width="370" height="275">
+
+Dimensions: 200mm x 130mm x 50mm
 
 ### Parts List:
 
@@ -132,3 +136,22 @@ Micro USB Cable 20cm | 1 | - |
 Micro USB Cable 100cm | 1 | - |
 RJ45 Ethernet Cable 100cm | 1 | - |
 5V/2.1A American Standard Adapter with Micro USB Connector | 1 | - |
+
+## Jetson Nano Developer Kit:
+
+NVIDIA® Jetson Nano™ Developer Kit is a computer that lets you run multiple neural networks side by side for applications like image classification, object detection, segmentation, and speech processing.
+
+<img src="https://developer.nvidia.com/sites/default/files/akamai/embedded/images/jetsonNano/JetsonNano-DevKit_Front-Top_Right_trimmed.jpg" width="316" height="257">
+
+
+## WD External HD: 
+
+WD External HD is a portable harddrive in which you can store massive amounts of files, inculding photos, videos, and music.
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/818%2BOzCMXlL._AC_SL1500_.jpg" width="300" height="200">
+
+## WIWAV 5 Port Switch:
+
+WIWAV's 5-Port Switch is a low power consumption device that series up to 5 Ethernet devices for critical applications in hazardous environments, such as smart traffic, factory automation, and outdoor access connection for video surveillance / FTTx and Wi-Fi coverage.
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/71xmV9A56uL._SL1500_.jpg" width="316" height="316">
