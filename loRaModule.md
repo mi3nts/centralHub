@@ -112,3 +112,23 @@ sudo pip3 install pynmea2
 2,4,6,8,12,14,16,18,22,24,26,28,32,34,36,38,42,44,46,48,52,54,56,58 * * * * cd /home/teamlary/gitHubRepos/CentralHub/firmware/jetson && python3 skyCamReaderNoSave.py
 */5 * * * * cd /home/teamlary/gitHubRepos/centralHub/firmware/jetson && python3 deleter.py
 ```
+--
+## LoRaWAN Gatewey:
+
+This kit provides all the basic tools needed to collect and transfer data among all your LoRa nodes.
+
+### Parts List:
+
+Parts | Quantity | Details |
+----------- | ----- | ----- |
+Raspberry Pi 3 | 1 | https://static.raspberrypi.org/files/product-briefs/Raspberry-Pi-Model-Bplus-Product-Brief.pdf |
+Seeeduino LoRaWAN with GPS | 1 | https://wiki.seeedstudio.com/Seeeduino_LoRAWAN/ |
+Gateway module RHF0M301 – 868 | 1 |
+PRI 2 Bridge RHF4T002 | 1 |
+8GB Micro SD Card – Class 10 | 1 |
+USB to UART Adapter | 1 |
+0dBi Rubber Duck Antenna | 1 |
+Micro USB Cable 20cm | 1 |
+Micro USB Cable 100cm | 1 |
+RJ45 Ethernet Cable 100cm | 1 |
+5V/2.1A American Standard Adapter with Micro USB Connector | 1 |
