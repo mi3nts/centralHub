@@ -133,7 +133,7 @@ Wave Length | 240 nm - 370 nm
 
 ## Grove - Light & Gesture & Color & Proximity Sensor (TMG39931) (V1.0)
 
-### The Grove - UV Sensor is used for detecting the intensity of incident ultraviolet(UV) radiation. The module outputs electrical signal which varies with the UV intensity.
+### The Grove - Light & Gesture & Color & Proximity Sensor features advanced Gesture detection, Proximity detection, Digital Ambient Light Sense(ALS), Color Sense(RGBC), and optical pattern generation/transmission for broadcast.
 
 <img src=https://files.seeedstudio.com/wiki/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/img/main.jpg"
 
