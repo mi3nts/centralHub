@@ -59,7 +59,7 @@ Temperature | -40°C - 85°C
 
 ### The Grove - Sunlight Sensor is a multi-channel digital light sensor, which has the ability to detect UV-light, visible light and infrared light.
 
-<img src=https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comseeedfile2018-07bazaar885583_3.jpg"
+<img src="https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comseeedfile2018-07bazaar885583_3.jpg">
 
 ### Interface: I2C
 
@@ -78,7 +78,7 @@ Wave Length | 280 nm - 950 nm
 
 ### The Grove - Light Sensor is an analog module and can output various electrical signals which can be converted to different ranges. It is a LDR sensor module for light measurement, light detection, and light-controlled switch.
 
-<img src=https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comseeedimg2016-10po8b7qd0xnlnchgogziq9g3d.jpg"
+<img src="https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comseeedimg2016-10po8b7qd0xnlnchgogziq9g3d.jpg">
 
 ### Interface: I2C
 
@@ -98,7 +98,7 @@ Wave Length | 540 nm
 
 ### The Grove - Luminance Sensor detects the intensity of the ambient light on a surface area. This Luminance Sensor can be used in application which requires automatic light adjustment in residential or commercial lighting.
 
-<img src=https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comimagesproductgrove20luminance20sensor.jpg"
+<img src="https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comimagesproductgrove20luminance20sensor.jpg">
 
 ### Interface: I2C
 
@@ -116,7 +116,7 @@ Luminance | 0 Lux - 1000 Lux
 
 ### The Grove - UV Sensor is used for detecting the intensity of incident ultraviolet(UV) radiation. The module outputs electrical signal which varies with the UV intensity.
 
-<img src=https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comimages101020043201.jpg"
+<img src="https://static-cdn.seeedstudio.site/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/h/t/httpsstatics3.seeedstudio.comimages101020043201.jpg">
 
 ### Interface: I2C
 
@@ -135,7 +135,7 @@ Wave Length | 240 nm - 370 nm
 
 ### The Grove - Light & Gesture & Color & Proximity Sensor features advanced Gesture detection, Proximity detection, Digital Ambient Light Sense(ALS), Color Sense(RGBC), and optical pattern generation/transmission for broadcast.
 
-<img src=https://files.seeedstudio.com/wiki/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/img/main.jpg"
+<img src="https://files.seeedstudio.com/wiki/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/img/main.jpg">
 
 ### Interface: I2C
 
