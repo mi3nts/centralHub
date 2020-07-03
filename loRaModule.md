@@ -123,12 +123,12 @@ Parts | Quantity | Details |
 ----------- | ----- | ----- |
 Raspberry Pi 3 | 1 | https://static.raspberrypi.org/files/product-briefs/Raspberry-Pi-Model-Bplus-Product-Brief.pdf |
 Seeeduino LoRaWAN with GPS | 1 | https://wiki.seeedstudio.com/Seeeduino_LoRAWAN/ |
-Gateway module RHF0M301 – 868 | 1 |
-PRI 2 Bridge RHF4T002 | 1 |
-8GB Micro SD Card – Class 10 | 1 |
-USB to UART Adapter | 1 |
-0dBi Rubber Duck Antenna | 1 |
-Micro USB Cable 20cm | 1 |
-Micro USB Cable 100cm | 1 |
-RJ45 Ethernet Cable 100cm | 1 |
-5V/2.1A American Standard Adapter with Micro USB Connector | 1 |
+Gateway module RHF0M301 – 868 | 1 | - |
+PRI 2 Bridge RHF4T002 | 1 | -|
+8GB Micro SD Card – Class 10 | 1 | - |
+USB to UART Adapter | 1 | - |
+0dBi Rubber Duck Antenna | 1 | - |
+Micro USB Cable 20cm | 1 | - |
+Micro USB Cable 100cm | 1 | - |
+RJ45 Ethernet Cable 100cm | 1 | - |
+5V/2.1A American Standard Adapter with Micro USB Connector | 1 | - |
