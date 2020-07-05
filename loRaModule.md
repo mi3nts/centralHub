@@ -141,17 +141,39 @@ RJ45 Ethernet Cable 100cm | 1 | - |
 
 NVIDIA® Jetson Nano™ Developer Kit is a computer that lets you run multiple neural networks side by side for applications like image classification, object detection, segmentation, and speech processing.
 
+CPU: Quad-core ARM A57 @ 1.43 GHz
+
+#### Items Included:
+
+-Jetson Nano Developer Kit
+
+-Small paper card with quick start and support information
+
+-Folded paper stand
+
 <img src="https://developer.nvidia.com/sites/default/files/akamai/embedded/images/jetsonNano/JetsonNano-DevKit_Front-Top_Right_trimmed.jpg" width="316" height="257">
 
 
-## WD External HD: 
+## WD 1TB Portable External Hard Drive: 
 
 WD External HD is a portable harddrive in which you can store massive amounts of files, inculding photos, videos, and music.
 
 <img src="https://images-na.ssl-images-amazon.com/images/I/818%2BOzCMXlL._AC_SL1500_.jpg" width="300" height="200">
+
+Interface: USB 3.0/2.0
+
+Dimensions: 4.33in x 3.21in x 0.64in
 
 ## WIWAV 5 Port Switch:
 
 WIWAV's 5-Port Switch is a low power consumption device that series up to 5 Ethernet devices for critical applications in hazardous environments, such as smart traffic, factory automation, and outdoor access connection for video surveillance / FTTx and Wi-Fi coverage.
 
 <img src="https://images-na.ssl-images-amazon.com/images/I/71xmV9A56uL._SL1500_.jpg" width="316" height="316">
+
+Interface: 5 x RJ45
+
+Transmission Speed: 10/100Mbps
+
+Dimensions: 28mm x 118mm x 89mm
+
+Range of Operating Temperatures: -30°C ~ +75°C
