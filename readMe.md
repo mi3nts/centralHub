@@ -37,7 +37,7 @@ The Central hub contains the following modules and it acts as the central data c
 
 ## Lora Module 
 - Rasberry Pi with LoRa 
-- Mobile modem 
+- Jetson Nano 
 - 5 port switch
 
 ## Power Module 
