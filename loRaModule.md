@@ -88,6 +88,8 @@ sudo pip3 install getmac
 sudo pip3 install pyserial
 sudo pip3 install netifaces
 sudo pip3 install pynmea2
+pip install getmac
+pip install pyserial
 ```
 ## Edit crontab with Nano 
 export VISUAL=nano; crontab -e
