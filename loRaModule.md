@@ -2,8 +2,14 @@
 
 Start by formatting the WD USB hard drive to the **_ext4_** filesystem. Then connect the external HD to the rasbery pi. Burn the loRa Pi [image](https://utdallas.box.com/s/bkn7oczqq91wwv21vduomhpvzin08i5l) to the provided 16 GB sd Card. Connect both the SD card and the WD hard drive to the rasbery pi and follow the instructions given below.  
 
-## Connect to USB serial cable to the rasberry pi and to your PC
-
+# Open a terminal from the rasbery pi.
+  - connect power through the micro USB.
+  - To open up a terminal you can try one of two ways
+    -- Using Nmap and Screen: use nmap to figure out the ip address of the pi and then use screen/putty to get access through ssh
+    -- Use the serial usb cable provided. Th eproper way to plug in to the GPIO port is shown below. 
+    
+    
+    {ADD PIC Here }
 
 ## Power the rasberry PI
 
