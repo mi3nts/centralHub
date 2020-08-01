@@ -63,23 +63,6 @@ Then go to the application tab and create an application under the credentials g
 Under the application created click on the table icon. Here you can register your Lora Nodes. 
 ![Lora Register 2](res/lora2.png)
 
-# Jetson 
-## insatall Dependancies
-```
-sudo apt-get install screen
-sudo apt-get install python3-pip
-sudo pip3 install getmac
-sudo pip3 install pyserial
-sudo pip3 install netifaces
-sudo pip3 install pynmea2
-```
-## Edit crontab with Nano 
-export VISUAL=nano; crontab -e
-
-# Adding nano previlegges  
-
-
-
 
 # Pi 
 ## insatall Dependancies
@@ -94,10 +77,36 @@ pip install getmac
 pip install pyserial
 ```
 ## Edit crontab with Nano 
-export VISUAL=nano; crontab -e
+
+```export VISUAL=nano; crontab -e```
+These changes should be made 
+```
+# m h  dom mon dow   command
+@reboot cd /home/rxhf/gitHubRepos/centralHub/firmware/pi && ./runAll.sh
+*/30 * * * * cd /home/rxhf/gitHubRepos/centralHub/firmware/pi && python3 deleter.py
+*/1 * * * * rsync -avzrtu -e "ssh -p 2222" /home/rxhf/mintsData/raw/ mints@mintsdata.utdallas.edu:raw/
+```
+
+## Edit crontab as Sudo
+
+``` 
+sudo export VISUAL=nano; crontab -e
+```
+
+```
+# m h  dom mon dow   command
+0 9 * * * sudo reboot
+```
 
 # Jetson 
+## insatall Dependancies
 ```
+sudo apt-get install screen
+sudo apt-get install python3-pip
+sudo pip3 install getmac
+sudo pip3 install pyserial
+sudo pip3 install netifaces
+sudo pip3 install pynmea2
 sudo adduser $USER dialout
 sudo adduser $USER tty
 sudo apt-get install screen
@@ -108,7 +117,7 @@ sudo pip3 install netifaces
 sudo pip3 install pynmea2
 ```
 
-## Crontab 
+## Crontab Example 
 ```
 @reboot cd /home/teamlary/gitHubRepos/centralHub/firmware/jetson && ./runAll.sh 
 * * * * * rsync -avzrtu -e "ssh -p 2222" /home/teamlary/mintsData/raw/ mints@mintsdata.utdallas.edu:raw
