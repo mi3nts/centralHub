@@ -1,10 +1,9 @@
 #!/bin/bash
 #
 sleep 30
-source /home/rxhf/lora/bin/activate && python loraReader.py
-sleep 5
 python3 ipReader.py
-
+sleep 5
+source /home/rxhf/lora/bin/activate && python loraReader.py
 
 # python3 centralNodeReaderNano.py &
 # sleep 10
