@@ -65,6 +65,15 @@ Comment the SD Boot
 
 Then restart the system.
 
+# Copying the git repo 
+```
+cd ~
+mkdir mintsData
+mkdir gitHubRepos 
+cd gitHubRepos
+git clone git@github.com:mi3nts/centralHub.git
+```
+
 ## Registering Lora Nodes
 
 On your browser type in the ip address of the Lora Gateway(Rasberry Pi) 
@@ -85,9 +94,15 @@ sudo pip3 install getmac
 sudo pip3 install pyserial
 sudo pip3 install netifaces
 sudo pip3 install pynmea2
+source /home/rxhf/lora/bin/activate
 pip install getmac
 pip install pyserial
 ```
+
+## Restart the pi
+```sudo reboot```
+
+
 ## Edit crontab with Nano 
 
 ```export VISUAL=nano; crontab -e```
@@ -102,7 +117,7 @@ These changes should be made
 ## Edit crontab as Sudo
 
 ``` 
-sudo export VISUAL=nano; crontab -e
+sudo crontab -e
 ```
 
 ```
@@ -110,8 +125,21 @@ sudo export VISUAL=nano; crontab -e
 0 9 * * * sudo reboot
 ```
 
+# Finally  Install DWSERVICE for remote logib
+
+```
+cd ~
+mkdir Downloads
+cd Downloads/
+wget https://www.dwservice.net/download/dwagent_generic.sh
+chmod +x dwagent_generic.sh 
+sudo ./dwagent_generic.sh 
+```
+Use default paths for the installation. 
+
+
 # Jetson 
-## insatall Dependancies
+## insatall Dependanciescd 
 ```
 sudo apt-get install screen
 sudo apt-get install python3-pip
