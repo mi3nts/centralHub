@@ -74,16 +74,6 @@ cd gitHubRepos
 git clone git@github.com:mi3nts/centralHub.git
 ```
 
-## Registering Lora Nodes
-
-On your browser type in the ip address of the Lora Gateway(Rasberry Pi) 
-
-Then go to the application tab and create an application under the credentials given below
-![Lora Register](res/lora.png)
-
-Under the application created click on the table icon. Here you can register your Lora Nodes. 
-![Lora Register 2](res/lora2.png)
-
 
 # Pi 
 ## insatall Dependancies
@@ -114,18 +104,21 @@ These changes should be made
 */1 * * * * rsync -avzrtu -e "ssh -p 2222" /home/rxhf/mintsData/raw/ mints@mintsdata.utdallas.edu:raw/
 ```
 
+## Check wheather the run all command runs 
+```cd /home/rxhf/gitHubRepos/centralHub/firmware/pi && ./runAll.sh```
+
 ## Edit crontab as Sudo
 
 ``` 
 sudo crontab -e
 ```
-
+Add a command for auto reboot 
 ```
 # m h  dom mon dow   command
 0 9 * * * sudo reboot
 ```
 
-# Finally  Install DWSERVICE for remote logib
+# Install DWSERVICE for remote login
 
 ```
 cd ~
@@ -136,6 +129,16 @@ chmod +x dwagent_generic.sh
 sudo ./dwagent_generic.sh 
 ```
 Use default paths for the installation. 
+
+
+## Registering Lora Nodes
+Plug in an HDMI monitor to the rasberri Pi. Open your browser and type in the ip address of the Lora Gateway(Rasberry Pi)
+
+Then go to the application tab and create an application under the credentials given below
+![Lora Register](res/lora.png)
+
+Under the application created click on the table icon. Here you can register your Lora Nodes. 
+![Lora Register 2](res/lora2.png)
 
 
 # Jetson 
