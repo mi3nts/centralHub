@@ -176,6 +176,8 @@ sudo pip3 install pynmea2
 If using a pre-used Images uninstall and again install dwservice with a new ID 
 ```sudo rm -rf /usr/share/dwagent```
 
+# Pre Loaded Images
+```dwagconfigure```
 
 
 
