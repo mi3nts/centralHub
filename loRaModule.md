@@ -160,6 +160,8 @@ sudo pip3 install netifaces
 sudo pip3 install pynmea2
 ```
 
+
+
 ## Crontab Example 
 ```
 @reboot cd /home/teamlary/gitHubRepos/centralHub/firmware/jetson && ./runAll.sh 
@@ -168,6 +170,14 @@ sudo pip3 install pynmea2
 2,4,6,8,12,14,16,18,22,24,26,28,32,34,36,38,42,44,46,48,52,54,56,58 * * * * cd /home/teamlary/gitHubRepos/CentralHub/firmware/jetson && python3 skyCamReaderNoSave.py
 */5 * * * * cd /home/teamlary/gitHubRepos/centralHub/firmware/jetson && python3 deleter.py
 ```
+
+
+## Uninstall DwService 
+If using a pre-used Images uninstall and again install dwservice with a new ID 
+```sudo rm -rf /usr/share/dwagent```
+
+
+
 
 ## LoRaWAN Gatewey:
 
