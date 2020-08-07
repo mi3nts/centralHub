@@ -1,50 +1,5 @@
 
 from getmac import get_mac_address
-import serial.tools.list_ports
-
-def findPort(find):
-    ports = list(serial.tools.list_ports.comports())
-    for p in ports:
-        currentPort = str(p)
-        if(currentPort.endswith(find)):
-            return(currentPort.split(" ")[0])
-
-
-def findDuePort():
-    ports = list(serial.tools.list_ports.comports())
-    for p in ports:
-        currentPort = str(p[2])
-        if(currentPort.find("PID=2341")>=0):
-            return(p[0])
-
-def findNanoPorts():
-    ports = list(serial.tools.list_ports.comports())
-    outPorts = []
-    for p in ports:
-        currentPort = str(p)
-        if(currentPort.endswith("FT232R USB UART")):
-            outPorts.append(currentPort.split(" ")[0])
-
-    return outPorts
-
-def findSabrentPorts():
-    ports = list(serial.tools.list_ports.comports())
-    outPorts = []
-    for p in ports:
-        currentPort = str(p[2])
-        if(currentPort.find("PID=067B")>=0):
-            outPorts.append(str(p[0]).split(" ")[0])
-    return outPorts
-
-def findOzonePort():
-    ports = list(serial.tools.list_ports.comports())
-    ozonePort = []
-    for p in ports:
-        currentPort = str(p[2])
-        if(currentPort.find("PID=067B")>=0):
-            ozonePort.append(str(p[0]).split(" ")[0])
-    return ozonePort
-
 
 def findMacAddress():
     macAddress= get_mac_address(interface="eth0")
@@ -63,18 +18,11 @@ def findMacAddress():
     if (macAddress!= None):
         return macAddress.replace(":","")
 
-
     return "xxxxxxxx"
 
 
-
 dataFolder            = "/home/rxhf/mintsData/raw"
-
-nanoPorts             = findNanoPorts()
 macAddress            = findMacAddress()
-latestDisplayOn       = True
-
-
 
 
 
@@ -83,9 +31,4 @@ if __name__ == "__main__":
     # to make sure everything is working run python3 mintsDefinitions.py 
     print("Mac Address    : {0}".format(macAddress))
     print("Data Folder    : {0}".format(dataFolder))
-    print("Latest On      : {0}".format(latestDisplayOn))
-    #-------------------------------------------#
-    print("Arduino Nanoes :")
-    for dev in nanoPorts:
-        print("\t{0}".format(dev))
 

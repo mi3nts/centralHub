@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Air Module - Central Hub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Central Hub</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+                                <li><a href="index.html">Home</a></li>
+								<li><a href="AirModule.html">Air Module</a></li>
+								<li><a href="LightModule.html">Light Module</a></li>
+                                <li><a href="Sound&LightningModule.html">Sound & Lightning Module</a></li>
+                                <li><a href="MainModule.html">Main Module</a></li>
+                                <li><a href="LoraModule.html">Lora Module</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Air Module</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h2 class="major">CO2, Temperature, & Humidity Sensor (SCD30:)</h3>
+										<p><b>The SCD30 Sensor is a versatile sensor that can measure C02, termperature, and humidity...Embedded with Sensirion SCD30 for C02 observation with Sensirion humidity and temperature sensors, which are on the same sensor module.</b>
+											<p>       </p>
+											<a href="#" class="image"><img src="images/pinout.jpg" width="400" height="250" alt="" /></a>
+										<p>Size: 58mm x 38mm x 19mm
+										</p>Interface: I2C
+<p>       </p>
+										<h1 class="major">Sensor Specifications:</h3>
+										<TABLE>
+											<TR>
+											   <TD><b>Measurement</b></TD>
+											   <TD><b>Range</b></TD>
+											   <TD><b>Accuracy</b><TD>
+											</TR>
+											<TR>
+											   <TD>C02</TD>
+											   <TD>0 – 40’000 ppm</TD>
+											   <TD>± (30 ppm + 3%MV)</TD>
+											</TR>
+											<TR>
+											   <TD>Humidity</TD>
+											   <TD>0 %RH – 100 %RH</TD>
+											   <TD>± 3 %RH</TD>
+											</TR>
+											<TR>
+												<TD>Temperature</TD>
+												<TD>- 40°C – 70°C</TD>
+												<TD>± (0.4°C + 0.023 × (T [°C] – 25°C))</TD>
+											 </TR>
+                                         </TABLE>
+                                    <section>
+                                        <h2 class="major">Dust Sensor (HM3301:)</h3>
+                                        <p><b>The HM3301 is a laser dust detection sensor.</b>
+											<p>       </p>
+											<a href="#" class="image"><img src="images/sensorair.jpg" width="400" height="250" alt="" /></a>
+										<p>Range: 1~500µg/ m3 (Effective Range)
+										<p>Interface: I2C
+                                        <p>Particle Size: 3 channels-- 2.5µm, 5µm, 10µm</p>
+<p>       </p>
+										<h1 class="major">Sensor Specifications:</h3>
+										<TABLE>
+											<TR>
+											   <TD><b>Measurement</b></TD>
+											   <TD><b>Value</b></TD>
+											</TR>
+											<TR>
+											   <TD>Operating Voltage</TD>
+											   <TD>3.3V / 5V</TD>
+											</TR>
+											<TR>
+											   <TD>Operating Humidity</TD>
+											   <TD>10%～90%RH (non-condensing)</TD>
+											</TR>
+											<TR>
+												<TD>Operating Temperature	</TD>
+												<TD>-10～60℃</TD>
+											</TR>
+                                         </TABLE>
+
+                                        <p><b> HM-3301 Dust Sensor is based on the Mie scattering theory. Light passes through particles with an amount equal to or greater than the wavelength of the light, light scattering forms.
+                                        <p>    </p>  
+                                        <p> Scattered light -> photodiode -> photodiode is amplified and analyzed by a circuit -> concentrations of the dust particles are aquired</b></p>
+                                        <a href="#" class="image"><img src="images/hm3301.jpg" width="300" height="180" alt="" /></a>
+                                        <section>
+                                          <p>         </p> 
+                                            <h2 class="major">Alphasense (OPC-N3:)</h3>
+                                            <p><b>The OPC-N3 Sensor uses laser beams to identify particles..Measures up to 40µm for pollen.</b>
+                                                <p>       </p>
+                                                <a href="#" class="image"><img src="images/opcn3.jpg" width="400" height="250" alt="" /></a>
+                                            <p>Digital Interface: SPI
+                                            <p>Dimensions: 75mm x 60mm x 63.5mm</p>
+    <p>       </p>
+                                            <h1 class="major">Sensor Specifications:</h3>
+                                            <TABLE>
+                                                <TR>
+                                                   <TD><b>Measurement</b></TD>
+                                                   <TD> -   </TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD>Particle Range</TD>
+                                                   <TD>0.35 to 40µm</TD>
+                                                </TR>
+                                                <TR>
+                                                <TD>Max Particle Count Rate</TD>
+                                                <TD>10,000 Particles/Second</TD>
+                                                </TR>
+                                            </TABLE>
+                                            <TABLE>
+                                                <TR>
+                                                   <TD><b>Measurement</b></TD>
+                                                           <TD><b>Range</b></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD>Humidity</TD>
+                                                   <TD>0 to 95%RH (non-condensing)</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD>Temperature</TD>
+                                                   <TD>-10 to 50°C</TD>
+                                                </TR>
+                                            </TABLE>
+                                            <section>
+                                                <p>         </p> 
+                                                  <h2 class="major">Humidity, Pressure, and Temperature Sensor (BME280:)</h3>
+                                                  <p><b>The BME280 combines a pressure sensor, humidity sensor, and temperature sensor in one.</b>
+                                                      <p>       </p>
+                                                      <a href="#" class="image"><img src="images/humidity.jpg" width="400" height="250" alt="" /></a>
+                                                  <p>*Interface: I²C and SPI
+                                                  <p>Size: 2.5mm x 2.5mm x 0.93mm³</p>
+          <p>       </p>
+                                                  <h1 class="major">Sensor Specifications:</h3>
+                                                  <TABLE>
+                                                      <TR>
+                                                         <TD><b>Measurement</b></TD>
+                                                         <TD><b>Range</b></TD>
+                                                         <TD><b>Accuracy</b></TD>
+                                                      </TR>
+                                                      <TR>
+                                                         <TD>Pressure</TD>
+                                                         <TD>300 - 1100 hPa</TD>
+                                                         <TD>±0.12 hPa</TD>
+                                                      </TR>
+                                                      <TR>
+                                                         <TD>Humidity</TD>
+                                                         <TD>0 %RH – 100 %RH</TD>
+                                                         <TD>± 3 %RH</TD>
+                                                      </TR>
+                                                      <TR>
+                                                        <TD>Temperature</TD>
+                                                        <TD>-40 - 85°C</TD>
+                                                        <TD>±1.0 -40°C - 65°C</TD>
+                                                     </TR>
+                                                  </TABLE>			
+                                                  <section>
+                                                    <p>         </p> 
+                                                      <h2 class="major">Grove – Multichannel Gas Sensor (MGS001:)</h3>
+                                                      <p><b>Gas detecting sensor with a built in MiCS-6814 that allows three gases to be measured concurrently, on account of its multi-channels.</b>
+                                                          <p>       </p>
+                                                          <a href="#" class="image"><img src="images/gas sensor.png" width="400" height="250" alt="" /></a>
+                                                      <p>*Interface: I²C 
+                                                        <p>       </p>
+                                                      <h1 class="major">Sensor Specifications:</h3>
+                                                      <TABLE>
+                                                          <TR>
+                                                             <TD><b>Detectable Gases</b></TD>
+                                                             <TD><b>Range</b></TD>
+                                                          </TR>
+                                                          <TR>
+                                                             <TD>Carbon monoxide CO</TD>
+                                                             <TD>1 – 1000ppm</TD>
+                                                          </TR>
+                                                          <TR>
+                                                             <TD>Nitrogen dioxide NO2</TD>
+                                                             <TD>0.05 – 10ppm</TD>
+                                                          </TR>
+                                                          <TR>
+                                                            <TD>Ethanol C2H5OH</TD>
+                                                            <TD>10 – 500ppm</TD>
+                                                         </TR>
+                                                         <TR>
+                                                            <TD>Hydrogen H2</TD>
+                                                            <TD>1 – 1000ppm</TD>
+                                                         </TR>
+                                                         <TR>
+                                                            <TD>Ammonia NH3</TD>
+                                                            <TD>1 – 500ppm</TD>
+                                                         </TR>
+                                                         <TR>
+                                                            <TD>Methane CH4</TD>
+                                                            <TD>>1000ppm</TD>
+                                                         </TR>
+                                                         <TR>
+                                                            <TD>Propane C3H8</TD>
+                                                            <TD>>1000ppm</TD>
+                                                         </TR>
+                                                         <TR>
+                                                            <TD>Iso-butane C4H10</TD>
+                                                            <TD>>1000ppm</TD>
+                                                         </TR>
+                                                      </TABLE>	
+                                                      <TABLE>
+                                                        <TR>
+                                                           <TD><b>Red Sensor</b></TD>
+                                                           <TD><b>Range</b></TD>
+                                                        </TR>
+                                                        <TR>
+                                                           <TD>Sensing Resistance in Air</TD>
+                                                           <TD>100-1500kΩ</TD>
+                                                        </TR>
+                                                        <TR>
+                                                           <TD>Typical CO Detection Range</TD>
+                                                           <TD>11-1000ppm</TD>
+                                                        </TR>
+                                                        <TR>
+                                                            <TD>Sensitivity Factor</TD>
+                                                            <TD>1.2-50</TD>
+                                                        </TR>
+                                                     </TABLE>
+                                                     <TABLE>
+                                                        <TR>
+                                                           <TD><b>OX Sensor</b></TD>
+                                                <TD><b>Range</b></TD>
+                                                        </TR>
+                                                        <TR>
+                                                           <TD>Sensing Resistance in Air</TD>
+                                                <TD>.8-20kΩ</TD>
+                                                        </TR> 
+                                                        <TR>
+                                                           <TD>Typical NO2 Detection Range</TD>
+                                                           <TD>0.05-10ppm</TD>
+                                                        </TR>
+                                                        <TR>
+                                                            <TD>Sensitivity Factor</TD>
+                                                            <TD>2</TD>
+                                                        </TR>
+                                                     </TABLE>
+                                                     <TABLE>
+                                                        <TR>
+                                                           <TD><b>NH3 Sensor</b></TD>
+                                                           <TD><b>Range</b></TD>
+                                                        </TR>
+                                                        <TR>
+                                                           <TD>Sensing Resistance in Air</TD>
+                                                           <TD>10-1500kΩ</TD>
+                                                        </TR>
+                                                        <TR>
+                                                           <TD>Typical NH3 Detection Range</TD>
+                                                           <TD>1-300ppm</TD>
+                                                        </TR>
+                                                        <TR>
+                                                            <TD>Sensitivity Factor</TD>
+                                                            <TD>1.5-15</TD>
+                                                        </TR>
+                                                     </TABLE>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
