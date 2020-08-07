@@ -63,5 +63,5 @@ if __name__ == "__main__":
     print("=============")
     print("    MINTS    ")
     print("=============")
-    print("Monitoring Ozone Sensor on port: {0}".format(gpsPort[0])+ " with baudrate " + str(baudRate))
+    print("Monitoring GPS Sensor on port: {0}".format(gpsPort[0])+ " with baudrate " + str(baudRate))
     main()

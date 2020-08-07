@@ -7,8 +7,8 @@ from mintsXU4 import mintsDefinitions as mD
 import time
 import sys
 
-dataFolder    = mD.dataFolder
-ozonePort     = mD.ozonePort
+dataFolderReference    = mD.dataFolderReference
+ozonePort              = mD.ozonePort
 
 
 baudRate = 2400

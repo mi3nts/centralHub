@@ -12,9 +12,10 @@ import json
 
 from mintsXU4 import mintsDefinitions as mD
 
-dataFolder      = mD.dataFolder
-latestDisplayOn = mD.latestDisplayOn
-macAddress      = mD.macAddress
+dataFolder             = mD.dataFolder
+dataFolderReference     = mD.dataFolderReference
+latestDisplayOn        = mD.latestDisplayOn
+macAddress             = mD.macAddress
 
 def writeJSONLatest(sensorDictionary,sensorName):
     directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
@@ -26,6 +27,15 @@ def writeJSONLatest(sensorDictionary,sensorName):
     except:
         print("Json Data Not Written")
 
+def writeJSONLatestReference(sensorDictionary,sensorName):
+    directoryIn  = dataFolderReference+"/"+macAddress+"/"+sensorName+".json"
+    print(directoryIn)
+    try:
+        with open(directoryIn,'w') as fp:
+            json.dump(sensorDictionary, fp)
+
+    except:
+        print("Json Data Not Written")
 
 
 def readJSONLatestAll(sensorName):
