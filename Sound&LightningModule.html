@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sound and Lightning Module - Central Hub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Central Hub</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+                                <li><a href="index.html">Home</a></li>
+								<li><a href="AirModule.html">Air Module</a></li>
+								<li><a href="LightModule.html">Light Module</a></li>
+                        <li><a href="Sound&LightningModule.html">Sound & Lightning Module</a></li>
+                        <li><a href="MainModule.html">Main Module</a></li>
+                        <li><a href="LoraModule.html">Lora Module</a></li>
+                        <li><a href="PowerModule.html">Power Module</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Sound and Lightning Module</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h2 class="major">DFRobot Analog Sound Level Meter (SEN0232:)</h3>
+										<p><b>The SEN0232 from DFRobot is a sensor that can accurately measure the sound levels of it's surrounding enviornment.
+                              <p><b>   It is a plug and play that uses a low noise microphone.</b>
+											<h1 class="major">Sensor Specifications:</h3>
+                                 <a href="#" class="image"><img src="images/sen0232.jpg" width="400" height="250" alt="" /></a>
+                                 <p>            </p>
+										<p>Dimensions: 60mm x 43mm
+                              <p>  Measurement Range: 30dBA ~ 130dBA
+                              <p>Input Voltage: 3.3 ~ 5.0V</p>   
+                              <p>Output Voltage: 0.6 ~ 2.6V</p> 
+                            <p>            </p>
+                            <h1 class="major">Board Overview:</h3>
+                              <a href="#" class="image"><img src="images/SoundLevelMeterBoardConnector.png" width="350" height="210" alt="" /></a>
+										<TABLE>
+											<TR>
+											   <TD><b>Number</b></TD>
+											   <TD><b>Label</b></TD>
+											   <TD><b>Description</b><TD>
+											</TR>
+											<TR>
+											   <TD>1</TD>
+											   <TD>A</TD>
+											   <TD>Analog Signal Output (0.6~2.6V)</TD>
+											</TR>
+											<TR>
+											   <TD>2</TD>
+											   <TD>+</TD>
+											   <TD>Power VCC (3.3~5.0V)</TD>
+											</TR>
+											<TR>
+												<TD>3</TD>
+												<TD>-</TD>
+												<TD>Power GND (0V)</TD>
+											 </TR>
+                                         </TABLE>
+                                    <section>
+                                        <h2 class="major">DFRobot Lightning Distance Sensor (SEN0290:)</h3>
+                                        <p><b>This sensor uses AMS AS3935 Franklin lightning sensor IC and Coilcraft's MA5532-AE antenna to examine lightning distance, intensity, and frequency both indoors or outdoors.</b>
+                                 <p>       </p>
+                                 <h1 class="major">Sensor Specifications:</h3>
+											<a href="#" class="image"><img src="images/lightning.jpg" width="350" height="210" alt="" /></a>
+                                 <p>Dimensions: 30.0mm x 22.0mm
+                                    <p>Input Voltage: 3.3V ~ 5.5V
+                                       <p>Maximum Detection Range: 40 km
+                                      <p>Distance Detection Resolution: 1 ~ 4 km
+                                    <p>Intensity Detection Resolution: 21 bits
+                                    <p>Interface: Gravity I2C (Addresses: 0x03, 0x02, 0x01)
+                                   <p>       </p>
+                                   <h1 class="major">Board Overview:</h3>
+                                    <a href="#" class="image"><img src="images/SEN0290_overview.png" width="350" height="210" alt="" /></a>
+										<TABLE>
+											<TR>
+											   <TD><b>Number</b></TD>
+                                    <TD><b>Label</b></TD>
+                                    <TD><b>Description</b></TD>
+											</TR>
+											<TR>
+											   <TD>1</TD>
+                                    <TD>VCC</TD>
+                                    <TD>Power VCC（3.3 ~ 5.5V）</TD>
+											</TR>
+											<TR>
+											   <TD>2</TD>
+                                    <TD>GND</TD>
+                                    <TD>Power GND</TD>
+											</TR>
+											<TR>
+												<TD>3</TD>
+                                    <TD>SCL</TD>
+                                    <TD>I2C clock signal</TD>
+                                 </TR>
+                                 <TR>
+												<TD>4</TD>
+                                    <TD>SDA</TD>
+                                    <TD>I2C data signal</TD>
+                                 </TR>
+                                 <TR>
+												<TD>5</TD>
+                                    <TD>ADDR</TD>
+                                    <TD>I2C address DIP switch</TD>
+                                 </TR>
+                                 <TR>
+												<TD>6</TD>
+                                    <TD>IRQ</TD>
+                                    <TD>Lightning alarm interrupt pin</TD>
+                                 </TR>
+                                 <TR>
+												<TD>7</TD>
+                                    <TD>PWR</TD>
+                                    <TD>Power indicator (red)</TD>
+											</TR>
+                                 </TABLE>
+<P>         </P>
+<section>
+   <h2 class="major">Pro Audio External Lavalier Microphone (DP-LM20GP:)</h3>
+   <p><b>The Pro Audio External Lavalier Microphone is a high quality mic that's ideal for video use. It even comes with a lapel clip to connect onto objects easily, as well as a foam windscreen to keep out unwanted noise.</b> 
+      <h1 class="major">Microphone Specifications:</h3>
+      <a href="#" class="image"><img src="images/micro.webp" width="400" height="250" alt="" /></a>
+      <p>            </p>
+   <p>Frequency Range: 35Hz ~ 18KHz
+   <p>  Sensitivity: -30dB +/-3dB / 0dB=1V/Pa, 1kHz
+   <p>   Cable length: Microphone: 1.2m
+   <p>   Mic Adapter: 11cm
+   <p>   Connector: Mini USB plug
+      <p>      </p>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
