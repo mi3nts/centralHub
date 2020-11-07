@@ -13,7 +13,7 @@ import json
 from mintsPi import mintsDefinitions as mD
 
 dataFolder      = mD.dataFolder
-latestDisplayOn = mD.latestDisplayOn
+#latestDisplayOn = mD.latestDisplayOn
 macAddress      = mD.macAddress
 
 def writeJSONLatest(sensorDictionary,sensorName):

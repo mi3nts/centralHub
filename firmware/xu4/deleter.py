@@ -26,7 +26,6 @@ def main():
 
         except OSError as e:
             print ("Error: %s - %s." % (e.filename, e.strerror))
-         
         
 
     for deleteDate in deleteDays:
@@ -53,6 +52,7 @@ def getDeletePathRef(deleteDate):
     deletePath = dataFolderRef+"/"+macAddress+"/"+str(deleteDate.year).zfill(4)  + \
     "/" + str(deleteDate.month).zfill(2)+ "/"+str(deleteDate.day).zfill(2)
     # print(deletePath)
+
     return deletePath;
 
 

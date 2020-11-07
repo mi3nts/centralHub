@@ -29,8 +29,7 @@ import math
 
 macAddress    = mD.macAddress
 dataFolder    = mD.dataFolder
-latestDisplayOn    = mD.latestDisplayOn
-
+latestDisplayOn    = True
 
 
 
