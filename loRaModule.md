@@ -133,8 +133,7 @@ Use default paths for the installation.
 ## Get the lora database 
 ``` cp lora.tar.gz /var/lib/```
 Delete the mysql folder at ```/var/lib/```  and extract ```lora.tar.gz``` to take its place. 
-```
-reboot the device 
+reboot the device  
 
 
 ## Registering Lora Nodes
