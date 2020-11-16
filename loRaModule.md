@@ -130,6 +130,12 @@ sudo ./dwagent_generic.sh
 ```
 Use default paths for the installation. 
 
+## Get the lora database 
+``` cp lora.tar.gz /var/lib/```
+Delete the mysql folder at ```/var/lib/```  and extract ```lora.tar.gz``` to take its place. 
+```
+reboot the device 
+
 
 ## Registering Lora Nodes
 Plug in an HDMI monitor to the rasberri Pi. Open your browser and type in the ip address of the Lora Gateway(Rasberry Pi)
