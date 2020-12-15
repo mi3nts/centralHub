@@ -81,3 +81,82 @@ Cable length: Microphone: 1.2m
 Mic Adapter: 11cm
 
 Connector: Mini USB plug
+
+## Assembly
+### Materials Needed
+* 3-D Printed Base
+* 3-D Printed "I" Stand
+* M3 Screws, Washers, and Nuts
+* M5 Screws, Washers, and Screw-On Tabs
+* M3 Spacers
+* Metal Stand
+* Sound and Lighting Protection Cube
+* White Screw Things: Size 7 and 9 (edit later)
+* DFRobot Analog Sound Level Meter
+* DFRobot Lightning Distance Sensor
+* Green Rectangle (edit later)
+
+### Step 1
+
+Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Screws, Washers, and Nuts
+![Completed Step One](https://photos.app.goo.gl/2uCjHqThKVuj9QLs9)
+
+### Step 2
+
+Flip the enitre thing over, then attach the Green Rectangle (edit later) using M3 Screws, Washers, and Nuts as shown below
+***Insert Image Here***
+
+### Step 3
+
+Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+***Insert Image Here***
+
+### Step 4
+
+Attach the DFRobot Lightning Distance Sensor to the top of the I stand as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+***Insert Inage Here***
+
+### Step 5
+
+Set your sensor aside and grage your Protective Cube. Orient the cube as shown in the image below, and drill two holes using a 1/4 inch drill bit: one in the center of the cube, and another below that hole.
+***insert image here***
+
+### Step 6
+
+Grab a 1/2 inch spade bit, and drill a hole on the bottom of the cube in line with the two previous holes you made in step 5
+***insert image here***
+
+### Step 7
+
+Using your 1/2 inch spade bit, drill two more holes as shown in the image below
+***insert image here***
+
+### Step 8
+
+Switch out the 1/2 inch spade bit for a 5/8 inch spade bit and drill one hole as shown in the image below
+***Insert Image here***
+
+### Step 9
+
+Place size 7 screw things in the 1/2 inch spade holes, and a size 9 in the single 5/8 inch spade hole as shown in the images below
+***insert image here***
+
+### Step 10
+
+Put the M5 screw and washer in the 1/4 inch hole inside the cube, and put the screw-on tab on the outside of the cube
+***insert image here***
+
+### Step 11
+
+Orient the tabs so that they are veritcal and parallel to eachother, and slide the metal stand onto the tabs as shown in the image below
+***insert image here***
+
+### Step 12
+
+Take the sensor, and insert M3 screws into the corner holes of the base as shown in the image below. Then, you put the M3 spacers on the screws as shown in the image below. Hot glue the spacers to the 3-D Printed base after the spacers are in place
+***insert imagem here***
+
+### Step 13
+
+Place Sensor in Protective Cube, and screw the M3 screws with M3 spacers into the holes provided inside the cube
+***insert image here***
