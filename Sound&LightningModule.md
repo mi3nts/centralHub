@@ -114,7 +114,7 @@ Flip the enitre thing over, then attach the Audino Base using M3 Screws, Washers
 ### Step 3
 
 Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
-<img src="https://drive.google.com/uc?export=view&id=1ObR1M-KjYW1ZzrN6zFnW26-wdjFLgd4s" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1j1mXqVR8ciDzvledHoYNqa2g9mgY46kN" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1c3wocuKA3Z1uKOVvge1e0s_y3z15RWnO" width="262" height="225"/>
+
 
 
 ### Step 4
