@@ -125,27 +125,32 @@ Attach the DFRobot Lightning Distance Sensor to the top of the I stand as shown 
 ### Step 5
 
 Set your sensor aside and grab your Protective Cube. Orient the cube as shown in the image below.
-***insert image here***
+
+<img src="https://drive.google.com/uc?export=view&id=1R0Vb4piPwkh_JyEReFgwKqNJb2Y3CI7Q" width="262" height="225"/>
 
 ### Step 6
 
-Drill 2 holes as shown using the 1/4 inch drill bit, 3 holes as shown using the 1/2 inch spade bit, and one hole as shown using the 5/8 inch spade bit
-***insert image here***
+Flip the cube over, and drill 2 holes as shown using the 1/4 inch drill bit, 3 holes as shown using the 1/2 inch spade bit, and one hole as shown using the 5/8 inch spade bit
+
+<img src="https://drive.google.com/uc?export=view&id=1zE45Gu35YLzPvM0aESMC19eaHsclgrUY" width="262" height="225"/>
 
 ### Step 7
 
 Place PG7s in the 1/2 inch spade holes, and a PG9 in the single 5/8 inch spade hole as shown in the images below
-***insert image here***
+
+<img src="https://drive.google.com/uc?export=view&id=1qFYt-Rp6-k0drU6iUz3wPVvLtYSN1hbE" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=16k5tpT21MHobiXnTsScI4E8R6f6Nqh91" width="262" height="225"/>
 
 ### Step 8
 
-Put the M5 screw and washer in the 1/4 inch holes inside the cube, and put the screw-on tab on the outside of the cube
-***insert image here***
+Put the M5 screw and washer in the 1/4 inch holes inside the cube, and put the screw-on tabs on the outside of the cube. Make sure that the raised part of the tab is pointing outward. 
+
+<img src="https://drive.google.com/uc?export=view&id=1DNwpJ5rJbeh5fn0Bx9_Wt7Q7JPC9MHtT" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1DjNtAAIUNb34DucKrpxtUHGne7XytoxR" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1tZK7FwEecLQ4RNsSmR_hzNlCorbrU5oV" width="262" height="225"/>
 
 ### Step 9
 
 Orient the tabs so that they are veritcal and parallel to eachother, and slide the metal stand onto the tabs as shown in the image below
-***insert image here***
+
+<img src="https://drive.google.com/uc?export=view&id=1DL0ObpAXau5mfEAyeQElJ65ZBsvNg3dM" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1Qib9oSWQSsGmTRdRfleR3H6h9EaHrrJJ" width="262" height="225"/>
 
 ### Step 10
 
