@@ -100,10 +100,6 @@ Connector: Mini USB plug
 * 5/8 insh Spade Bit
 
 ### Step 1
-
-Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Screws, Washers, and Nuts
-![Completed Step One](https://photos.app.goo.gl/2uCjHqThKVuj9QLs9)
-
 ### Step 2
 
 Flip the enitre thing over, then attach the Audino Base using M3 Screws, Washers, and Nuts as shown below
