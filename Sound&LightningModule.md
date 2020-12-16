@@ -100,15 +100,22 @@ Connector: Mini USB plug
 * 5/8 insh Spade Bit
 
 ### Step 1
+
+Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+
+<img src="https://drive.google.com/uc?export=view&id=16hcOdLom1ZOnJx4oCnghUC_kzMpiftju" width="262" height="225"/> <img src="https://drive.google.com/uc?export=view&id=1dNmhgkILELsR8finxkSXPTyehYhdaiLL" width="262" height="225"/> <img src="https://drive.google.com/uc?export=view&id=1Nvcusx4DL2SgWKDgUutua8wzZCXe41FH" width="262" height="225"/>
+
 ### Step 2
 
-Flip the enitre thing over, then attach the Audino Base using M3 Screws, Washers, and Nuts as shown below
-***Insert Image Here***
+Flip the enitre thing over, then attach the Audino Base using M3 Screws, Washers, and Nuts as shown below. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+
+<img src="https://drive.google.com/uc?export=view&id=1OwqXUEIF22hA17F2CdsVUnWghXUXyF8v" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1a9Yn_72ZSQhyXEUABEgW5Uo3IkGmAZIx" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1xTwCKDjK6G4ofytVibjVACVc6W5skC5P" width="262" height="225"/>
 
 ### Step 3
 
 Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
-***Insert Image Here***
+<img src="https://drive.google.com/uc?export=view&id=1ObR1M-KjYW1ZzrN6zFnW26-wdjFLgd4s" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1j1mXqVR8ciDzvledHoYNqa2g9mgY46kN" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1c3wocuKA3Z1uKOVvge1e0s_y3z15RWnO" width="262" height="225"/>
+
 
 ### Step 4
 
