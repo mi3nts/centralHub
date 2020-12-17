@@ -126,13 +126,13 @@ Attach the DFRobot Lightning Distance Sensor to the top of the I stand as shown 
 
 Set your sensor aside and grab your Protective Cube. Orient the cube as shown in the image below.
 
-<img src="https://drive.google.com/uc?export=view&id=1R0Vb4piPwkh_JyEReFgwKqNJb2Y3CI7Q" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_140646.jpg?raw=true" width="262" height="225"/>
 
 ### Step 6
 
 Flip the cube over, and drill 2 holes as shown using the 1/4 inch drill bit, 3 holes as shown using the 1/2 inch spade bit, and one hole as shown using the 5/8 inch spade bit
 
-<img src="https://drive.google.com/uc?export=view&id=1zE45Gu35YLzPvM0aESMC19eaHsclgrUY" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/Box%20measurement%20screenshot.png?raw=true" width="262" height="225"/>
 
 ### Step 7
 
