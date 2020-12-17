@@ -109,7 +109,7 @@ Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as sh
 
 Flip the enitre thing over, then attach the Audino Base using M3 Screws, Washers, and Nuts as shown below. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
-<img src="https://drive.google.com/uc?export=view&id=1OwqXUEIF22hA17F2CdsVUnWghXUXyF8v" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1a9Yn_72ZSQhyXEUABEgW5Uo3IkGmAZIx" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1xTwCKDjK6G4ofytVibjVACVc6W5skC5P" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_121356.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122320.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122930.jpg?raw=true" width="262" height="225"/>
 
 ### Step 3
 
