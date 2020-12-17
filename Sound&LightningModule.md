@@ -138,7 +138,7 @@ Flip the cube over, and drill 2 holes as shown using the 1/4 inch drill bit, 3 h
 
 Place PG7s in the 1/2 inch spade holes, and a PG9 in the single 5/8 inch spade hole as shown in the images below
 
-<img src="https://drive.google.com/uc?export=view&id=1qFYt-Rp6-k0drU6iUz3wPVvLtYSN1hbE" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=16k5tpT21MHobiXnTsScI4E8R6f6Nqh91" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_150501.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151130.jpg?raw=true" width="262" height="225"/>
 
 ### Step 8
 
