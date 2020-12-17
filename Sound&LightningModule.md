@@ -121,7 +121,7 @@ Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image usi
 
 Attach the DFRobot Lightning Distance Sensor to the top of the I stand as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
-<img src="https://drive.google.com/uc?export=view&id=14ul1m5PN8V_uNduPszmEB0EUKTns88Zj" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1kqyvGlQKXLCpyWljkC3JAB2tXtBtj8hO" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1PcgSnujeWaxP8Y9jNG0zE2NaxEgL6Ygw" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_132504.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_133414.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_135548.jpg?raw=true" width="262" height="225"/>
 ### Step 5
 
 Set your sensor aside and grab your Protective Cube. Orient the cube as shown in the image below.
