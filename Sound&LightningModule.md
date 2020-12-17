@@ -103,7 +103,7 @@ Connector: Mini USB plug
 
 Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
-<img src="https://drive.google.com/uc?export=view&id=16hcOdLom1ZOnJx4oCnghUC_kzMpiftju" width="262" height="225"/> <img src="https://drive.google.com/uc?export=view&id=1dNmhgkILELsR8finxkSXPTyehYhdaiLL" width="262" height="225"/> <img src="https://drive.google.com/uc?export=view&id=1Nvcusx4DL2SgWKDgUutua8wzZCXe41FH" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_112242.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115304.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115936.jpg?raw=true" width="262" height="225"/>
 
 ### Step 2
 
