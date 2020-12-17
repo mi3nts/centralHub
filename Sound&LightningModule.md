@@ -144,7 +144,7 @@ Place PG7s in the 1/2 inch spade holes, and a PG9 in the single 5/8 inch spade h
 
 Put the M5 screw and washer in the 1/4 inch holes inside the cube, and put the screw-on tabs on the outside of the cube. Make sure that the raised part of the tab is pointing outward. 
 
-<img src="https://drive.google.com/uc?export=view&id=1DNwpJ5rJbeh5fn0Bx9_Wt7Q7JPC9MHtT" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1DjNtAAIUNb34DucKrpxtUHGne7XytoxR" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1tZK7FwEecLQ4RNsSmR_hzNlCorbrU5oV" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151821.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152225.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152701.jpg?raw=true" width="262" height="225"/>
 
 ### Step 9
 
