@@ -150,16 +150,16 @@ Put the M5 screw and washer in the 1/4 inch holes inside the cube, and put the s
 
 Orient the tabs so that they are veritcal and parallel to eachother, and slide the metal stand onto the tabs as shown in the image below
 
-<img src="https://drive.google.com/uc?export=view&id=1DL0ObpAXau5mfEAyeQElJ65ZBsvNg3dM" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1Qib9oSWQSsGmTRdRfleR3H6h9EaHrrJJ" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
 ### Step 10
 
 Take the sensor, and insert M3 screws into the corner holes of the base as shown in the image below. Then, you put the M3 spacers on the screws as shown in the image below. Hot glue the spacers to the 3-D Printed base after the spacers are in place
 
-<img src="https://drive.google.com/uc?export=view&id=1VMrmIsVJOLMKfVDPpI4jx85wynL09eOW" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=16DMIp7rxagITQ9dLN1qoL-d1rJQxkxVR" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1KjiCZXHYQFjO_69lLmUhrSfr930IuT0S" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
 ### Step 11
 
 Place Sensor in Protective Cube, and screw the M3 screws with M3 spacers into the golden holes provided inside the cube
 
-<img src="https://drive.google.com/uc?export=view&id=1Vyrc1dVHw-WilTyXKTwF2hThFCpZWqxZ" width="262" height="225"/><img src="https://drive.google.com/uc?export=view&id=1z_k_7vgEv_l1FQd0lDpvvbH7KALnPOR" width="262" height="225"/>
+<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112031.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112616.jpg?raw=true" width="262" height="225"/>
