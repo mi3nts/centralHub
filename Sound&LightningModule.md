@@ -94,10 +94,10 @@ Connector: Mini USB plug
 * PG7s and PG9s
 * DFRobot Analog Sound Level Meter
 * DFRobot Lightning Distance Sensor
-* Audino Base
+* Arduino Base
 * 1/4 inch Drill Bit
 * 1/2 inch Spade Bit
-* 5/8 insh Spade Bit
+* 5/8 inch Spade Bit
 
 ### Step 1
 
@@ -107,7 +107,7 @@ Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as sh
 
 ### Step 2
 
-Flip the enitre thing over, then attach the Audino Base using M3 Screws, Washers, and Nuts as shown below. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Flip the enitre thing over, then attach the Arduino Base using M3 Screws, Washers, and Nuts as shown below. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_121356.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122320.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122930.jpg?raw=true" width="262" height="225"/>
 
