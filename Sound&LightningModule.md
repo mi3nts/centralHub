@@ -86,7 +86,7 @@ Connector: Mini USB plug
 ### Materials Needed
 * 3-D Printed Base
 * 3-D Printed "I" Stand
-* M3 Screws, Washers, and Nuts
+* M3 Bolts, Washers, and Nuts
 * M5 Screws, Washers, and Screw-On Tabs
 * M3 Spacers
 * Metal Stand
@@ -101,25 +101,25 @@ Connector: Mini USB plug
 
 ### Step 1
 
-Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_112242.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115304.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115936.jpg?raw=true" width="262" height="225"/>
 
 ### Step 2
 
-Flip the enitre thing over, then attach the Arduino Base using M3 Screws, Washers, and Nuts as shown below. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Flip the enitre thing over, then attach the Arduino Base using M3 bolts, Washers, and Nuts as shown below. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_121356.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122320.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122930.jpg?raw=true" width="262" height="225"/>
 
 ### Step 3
 
-Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image using M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_124506.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_130157.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_130418.jpg?raw=true" width="262" height="225"/>
 
 ### Step 4
 
-Attach the DFRobot Lightning Distance Sensor to the top of the I stand as shown in the image using M3 Screws, Washers, and Nuts. Make sure your screws are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Attach the DFRobot Lightning Distance Sensor to the top of the I stand as shown in the image using M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_132504.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_133414.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_135548.jpg?raw=true" width="262" height="225"/>
 ### Step 5
@@ -154,12 +154,12 @@ Orient the tabs so that they are veritcal and parallel to eachother, and slide t
 
 ### Step 10
 
-Take the sensor, and insert M3 screws into the corner holes of the base as shown in the image below. Then, you put the M3 spacers on the screws as shown in the image below. Hot glue the spacers to the 3-D Printed base after the spacers are in place
+Take the sensor, and insert M3 bolts into the corner holes of the base as shown in the image below. Then, you put the M3 spacers on the bolts as shown in the image below. Hot glue the spacers to the 3-D Printed base after the spacers are in place
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
 ### Step 11
 
-Place Sensor in Protective Cube, and screw the M3 screws with M3 spacers into the golden holes provided inside the cube
+Place Sensor in Protective Cube, and screw the M3 bolts with M3 spacers into the golden holes provided inside the cube
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112031.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112616.jpg?raw=true" width="262" height="225"/>
