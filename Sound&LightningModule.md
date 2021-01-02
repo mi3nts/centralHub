@@ -113,7 +113,7 @@ Flip the enitre thing over, then attach the Arduino Base using M3 bolts, Washers
 
 ### Step 3
 
-Attach the 3-D Printed I stand to the 3-D Printed Base as shown in the image using M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Attach the 3-D Printed stand to the 3-D Printed Base as shown in the image using M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_124506.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_130157.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_130418.jpg?raw=true" width="262" height="225"/>
 
