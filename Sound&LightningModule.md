@@ -88,7 +88,7 @@ Connector: Mini USB plug
 * 3-D Printed Stand
 * M3 Bolts, Washers, and Nuts
 * M5 Screws, Washers, and Screw-On Tabs
-* M3 Spacers
+* M3 Spacers (2 Thick, 2 Thin)
 * Metal Stand
 * Sound and Lighting Protection Cube
 * PG7s and PG9s
@@ -143,13 +143,14 @@ Slide an M5 washer onto an M5 screw and insert form underneath box. Screw black 
 
 ### Step 8
 
-Orient the tabs so that they are veritcal and parallel to each other, and slide the metal stand onto the tabs as shown in the image below
+Slide any side of the metal stand onto the black tabs, starting on the side closest to the tabs. Move the metal stand across the box onto the second PG glan. If the metal stand does not feel secure, remove and tighten the black tabs. Reattach and reeveluate.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
 ### Step 9
 
-Take the sensor, and insert M3 bolts into the corner holes of the base as shown in the image below. Then, you put the M3 spacers on the bolts as shown in the image below. Hot glue the spacers to the 3-D Printed base after the spacers are in place
+Insert four M3 bolts into the corners of the base on the side with the DFRobot Lightning Distance Sensor. Flip the unit over and add spacers to each bolt. Use the thinner spacers on the side next to the DFRobot Analog Sound Level Meter as shown in image. Add a small amount of hot glue to the bottom of the spacers to secure them to the 3-D Printed 
+Base, being careful not to place glue on the bolt or electronics. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
