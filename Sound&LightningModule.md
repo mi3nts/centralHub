@@ -107,7 +107,7 @@ Align the DFR Analog Sound Level Meter along the right side of the 3-D Printed B
 
 ### Step 2
 
-Flip the enitre thing over, then attach the Arduino Base using M3 bolts, Washers, and Nuts as shown below. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Flip over the 3-D Printed Base so that the DFR Analog Sound Meter is facing down and the large hole of the 3-D Printed Base is on the top right. Align the Arduino Base along the right side with the golden colored USB connector on the opposite side of the large Base hole. Slide an M3 Washer onto an M3 Bolt and insert into the hole from underneath the 3-D Base and up through the Arduino Base. Slide an M3 Washer onto the bolt length, and place an M3 Nut onto the bolt and rotate a few times to begin securing. Use a wrench to stablize the nut while using a drill to tighten the bolt. See images for reference. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_121356.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122320.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122930.jpg?raw=true" width="262" height="225"/>
 
