@@ -137,7 +137,7 @@ Unscrew the bottom piece of 3 of the PG7 glands and place into the 1/2 inch spad
 
 ### Step 7
 
-Put the M5 screw and washer in the 1/4 inch holes inside the cube, and put the screw-on tabs on the outside of the cube. Make sure that the raised part of the tab is pointing outward. 
+Slide an M5 washer onto an M5 screw and insert form underneath box. Screw black tabs, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Tabs should be in ine with each other. See images for reference. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151821.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152225.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152701.jpg?raw=true" width="262" height="225"/>
 
