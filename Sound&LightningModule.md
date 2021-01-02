@@ -101,7 +101,7 @@ Connector: Mini USB plug
 
 ### Step 1
 
-Take your 3-D Printed Base and attach the DFRobot Analog Sound Level Meter as shown below uswing M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Align the DFR Analog Sound Level Meter along the right side of the 3-D Printed Base. The large hole of the Base should be on the top left. See image for reference. Take four M3 bolts and slide an M3 washer onto each. Insert them into the four corners of the Meter and through the Base. Add an M3 washer and then an M3 nut to the opposite side and tighten.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_112242.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115304.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115936.jpg?raw=true" width="262" height="225"/>
 
@@ -155,6 +155,6 @@ Base, being careful not to place glue on the bolt or electronics.
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
 ### Step 10
-With the 3-D printed stand pointed upward, place the completed sensor unit into the box witht the metal stand pointed downward. See image for reference. The PG7 hole should line up with the large hole in the 3-D printed base. The four screws with spacers should fit into the four provided threaded inserts in the box. Tighten the four screws. 
+With the 3-D printed stand pointed upward, place the completed sensor unit into the box with the metal stand pointed downward. See image for reference. The PG7 hole should line up with the large hole in the 3-D printed base. The four screws with spacers should fit into the four provided threaded inserts in the box. Tighten the four screws. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112031.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112616.jpg?raw=true" width="262" height="225"/>
