@@ -137,13 +137,13 @@ Unscrew the bottom piece of 3 of the PG7 glands and place into the 1/2 inch spad
 
 ### Step 7
 
-Slide an M5 washer onto an M5 screw and insert form underneath box. Screw black tabs, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Tabs should be in ine with each other. See images for reference. 
+Slide an M5 washer onto an M5 screw and insert form underneath box. Screw black tabs, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Tabs should be in line with each other. See images for reference. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151821.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152225.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152701.jpg?raw=true" width="262" height="225"/>
 
 ### Step 8
 
-Orient the tabs so that they are veritcal and parallel to eachother, and slide the metal stand onto the tabs as shown in the image below
+Orient the tabs so that they are veritcal and parallel to each other, and slide the metal stand onto the tabs as shown in the image below
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
