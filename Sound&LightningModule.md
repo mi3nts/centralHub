@@ -123,37 +123,37 @@ Attach the DFRobot Lightning Distance Sensor to the top of the 3-D printed stand
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_132504.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_133414.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_135548.jpg?raw=true" width="262" height="225"/>
 
-### Step 6
+### Step 5
 
 Orient the cube as shown. Drill 2 holes using the 1/4 inch drill bit, 3 holes using the 1/2 inch spade bit, and one hole using the 5/8 inch spade bit as illustrated in the image
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/Box%20measurement%20screenshot.png?raw=true" width="262" height="225"/>
 
-### Step 7
+### Step 6
 
 Place PG7s in the 1/2 inch spade holes, and a PG9 in the single 5/8 inch spade hole as shown in the images below
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_150501.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151130.jpg?raw=true" width="262" height="225"/>
 
-### Step 8
+### Step 7
 
 Put the M5 screw and washer in the 1/4 inch holes inside the cube, and put the screw-on tabs on the outside of the cube. Make sure that the raised part of the tab is pointing outward. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151821.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152225.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152701.jpg?raw=true" width="262" height="225"/>
 
-### Step 9
+### Step 8
 
 Orient the tabs so that they are veritcal and parallel to eachother, and slide the metal stand onto the tabs as shown in the image below
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
-### Step 10
+### Step 9
 
 Take the sensor, and insert M3 bolts into the corner holes of the base as shown in the image below. Then, you put the M3 spacers on the bolts as shown in the image below. Hot glue the spacers to the 3-D Printed base after the spacers are in place
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
-### Step 11
+### Step 10
 
 Place Sensor in Protective Cube, and screw the M3 bolts with M3 spacers into the golden holes provided inside the cube
 
