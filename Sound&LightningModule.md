@@ -131,7 +131,7 @@ Orient the cube as shown. Drill 2 holes using the 1/4 inch drill bit, 3 holes us
 
 ### Step 6
 
-Place PG7s in the 1/2 inch spade holes, and a PG9 in the single 5/8 inch spade hole as shown in the images below
+Unscrew the bottom piece of 3 of the PG7 glands and place into the 1/2 inch spade holes. Reattach bottom pieces and tighten. Repeat with one PG9 gland in the 5/8 inch spade hole.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_150501.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151130.jpg?raw=true" width="262" height="225"/>
 
