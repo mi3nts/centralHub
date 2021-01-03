@@ -101,7 +101,7 @@ Connector: Mini USB plug
 
 ### Step 1
 
-Align the DFR Analog Sound Level Meter along the right side of the 3-D Printed Base. The large hole of the Base should be on the top left. See image for reference. Take four M3 bolts and slide an M3 washer onto each. Insert them into the four corners of the Meter and through the Base. Add an M3 washer and then an M3 nut to the opposite side and tighten.
+Align the DFRobot Analog Sound Level Meter along the right side of the 3-D Printed Base. The large hole of the Base should be on the top left and the wire port of the DFRobot Analog Sound Level meter should be pointing down. See image for reference. Take four M3 bolts and slide an M3 washer onto each. Insert them into the four corners of the Meter and through the Base. Add an M3 washer and then an M3 nut to the opposite side and tighten.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_112242.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115304.jpg?raw=true" width="262" height="225"/> <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_115936.jpg?raw=true" width="262" height="225"/>
 
@@ -112,14 +112,13 @@ Flip over the 3-D Printed Base so that the DFR Analog Sound Meter is facing down
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_121356.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122320.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_122930.jpg?raw=true" width="262" height="225"/>
 
 ### Step 3
-
-Attach the 3-D Printed stand to the 3-D Printed Base as shown in the image using M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
+With the Arduino Base facing towards you and the large hole of the 3-D Printed Base at the top right, attach the 3-D Printed Stand using the two small holes to the left of the large hole. Using either end of the stand, place the 3-D Printed Stand on top of the 3-D Printed Base. Slide on an M3 Wahser onto an M3 Bolt and insert it from underneath the base and up through the stand hole. Slide a washer onto the bolt from the top, then tighten with an M3 Nut. Repeat for the second hole.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_124506.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_130157.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_130418.jpg?raw=true" width="262" height="225"/>
 
 ### Step 4
 
-Attach the DFRobot Lightning Distance Sensor to the top of the 3-D printed stand as shown in the image using M3 Bolts, Washers, and Nuts. Make sure your bolts are oriented correctly to ensure your sensor will fit in the Protective Cube.
+Attach the DFRobot Lightning Distance Sensor to the top of the 3-D printed stand with the wires laying across the Base. Align the holes and slide an M3 Washer onto an M3 Bolt and insert them from the top of the DFRobot Lightning Distance Sensor and down through the stand. Slide a M3 Washer from underneath onto the Bolt, then add an M3 Nut and tighten. Repeat for the second hole. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_132504.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_133414.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_135548.jpg?raw=true" width="262" height="225"/>
 
