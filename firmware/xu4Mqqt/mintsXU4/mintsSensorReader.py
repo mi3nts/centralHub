@@ -571,7 +571,7 @@ def TB108LWrite(sensorData, dateTime):
                 ("pressure"       ,dataOut[2]),
                 ("voltage"        ,dataOut[3])
         	     ])
-        sensorFinisherReference(dateTime,sensorName,sensorDictionary)
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 def getDeltaTime(beginTime,deltaWanted):
     return (time.time() - beginTime)> deltaWanted
