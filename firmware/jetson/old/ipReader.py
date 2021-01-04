@@ -7,8 +7,8 @@ from collections import OrderedDict
 import netifaces as ni
 from requests import get
 
-from mintsXU4 import mintsSensorReader as mSR
-from mintsXU4 import mintsDefinitions  as mD
+from mintsJetson import mintsSensorReader as mSR
+from mintsJetson import mintsDefinitions  as mD
 
 dataFolder = mD.dataFolder
 
@@ -17,11 +17,26 @@ def main():
 
     sensorName = "IP"
     dateTimeNow = datetime.datetime.now()
-    print("Gaining Public and Private IPs")
+    print("Gaining the Public and Private IPs")
 
     publicIp = get('https://api.ipify.org').text
-    #localIp  = ni.ifaddresses('docker0')[ni.AF_INET][0]['addr'] # Lab Machine
-    localIp = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'] # Odroid XU4
+
+    try:
+    	localIp  = ni.ifaddresses('docker0')[ni.AF_INET][0]['addr'] # Lab Machine
+    except:
+   	 print("An exception occurred")
+
+    try:
+        localIp  = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'] # Lab Machine
+    except:
+         print("An exception occurred")
+
+    try:
+        localIp  = ni.ifaddresses('wlan0')[ni.AF_INET][0]['addr'] # Lab Machine
+    except:
+         print("An exception occurred")
+    if (localIp == None):
+         localIp = "unknown"
 
     sensorDictionary =  OrderedDict([
             ("dateTime"     , str(dateTimeNow)),

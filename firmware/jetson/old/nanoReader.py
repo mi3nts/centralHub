@@ -1,10 +1,8 @@
-#
 import serial
 import datetime
-from mintsXU4 import mintsSensorReader as mSR
-from mintsXU4 import mintsDefinitions as mD
+from mintsJetson import mintsSensorReader as mSR
+from mintsJetson import mintsDefinitions as mD
 import sys
-
 
 dataFolder  = mD.dataFolder
 nanoPorts   = mD.nanoPorts

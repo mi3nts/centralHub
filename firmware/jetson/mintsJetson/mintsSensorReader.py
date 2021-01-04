@@ -27,22 +27,29 @@ from collections import OrderedDict
 import netifaces as ni
 import math
 
-macAddress      = mD.macAddress
-dataFolder      = mD.dataFolder
+macAddress     = mD.macAddress
+dataFolder     = mD.dataFolder
 latestDisplayOn = mD.latestDisplayOn
+dataFolderMQTT = mD.dataFolderMQTT
+latestOn       = mD.latestOn
+mqttOn         = mD.mqttOn
+
 
 def sensorFinisher(dateTime,sensorName,sensorDictionary):
-    # Getting Write Path
-    print("-----------------------------------")
+    #Getting Write Path
     writePath = getWritePath(sensorName,dateTime)
-    exists    = directoryCheck(writePath)
+    exists = directoryCheck(writePath)
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
-    if(latestDisplayOn):
+    if(latestOn):
        mL.writeJSONLatest(sensorDictionary,sensorName)
+    if(mqttOn):
+       mL.writeMQTTLatest(sensorDictionary,sensorName)   
+
+    print("-----------------------------------")
     print(sensorName)
     print(sensorDictionary)
-    print("-----------------------------------")
+
 
 def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
     #Getting Write Path
@@ -52,11 +59,12 @@ def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
     print(writePath)
     if(latestDisplayOn):
        mL.writeJSONLatest(sensorDictionary,sensorName)
-
+    if(mqttOn):
+       mL.writeMQTTLatest(sensorDictionary,sensorName)   
+        
     print("-----------------------------------")
     print(sensorName)
     print(sensorDictionary)
-
 def dataSplit(dataString,dateTime):
     dataOut   = dataString.split('!')
     if(len(dataOut) == 2):
@@ -555,6 +563,182 @@ def TB108LWrite(sensorData, dateTime):
                 ("voltage"        ,dataOut[3])
         	     ])
         sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+
+
+### FOR AIR MAR - Added January 4 2021 
+
+def getDeltaTimeAM(beginTime,deltaWanted):
+    return (time.time() - beginTime)> deltaWanted
+
+def HCHDTWriteAM(sensorData,dateTime):
+
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "HCHDT"
+    dataLength = 3
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"    ,str(dateTime)),
+        	    ("heading"      ,dataOut[1]),
+            	("HID"          ,dataOut[2]),
+                ("checkSum"     ,dataOut[3]),
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+def WIMWVWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "WIMWV"
+    dataLength = 6
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"       ,str(dateTime)),
+        	("windAngle"      ,dataOut[1]),
+            	("WAReference"    ,dataOut[2]),
+                ("windSpeed"      ,dataOut[3]),
+            	("WSUnits" ,       dataOut[4]),
+            	("status"         ,dataOut[5]),
+                ("checkSum"       ,dataOut[6]),
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def GPGGAWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "GPGGA"
+    dataLength = 15
+    gpsQuality = int(dataOut[6])
+	
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if((len(dataOut) == (dataLength +1)) and (gpsQuality>0)):
+        sensorDictionary = OrderedDict([
+                ("dateTime"              ,str(dateTime)),
+        	("UTCTimeStamp"          ,dataOut[1]),
+            	("latitude"              ,dataOut[2]),
+                ("latDirection"          ,dataOut[3]),
+                ("longitude"             ,dataOut[4]),
+                ("lonDirection"          ,dataOut[5]),
+            	("gpsQuality"            ,dataOut[6]),
+                ("numberOfSatellites"    ,dataOut[7]),
+                ("horizontalDilution"    ,dataOut[8]),
+                ("altitude"              ,dataOut[9]),
+                ("AUnits"                ,dataOut[10]),
+                ("geoidalSeparation"     ,dataOut[11]),
+                ("GSUnits"               ,dataOut[12]),
+                ("ageOfDifferential"     ,dataOut[13]),
+                ("stationID"             ,dataOut[14]),
+                ("checkSum"              ,dataOut[15])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+def GPVTGWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "GPVTG"
+    dataLength = 10
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"               ,str(dateTime)),
+        	("courseOGTrue"           ,dataOut[1]),
+            	("relativeToTN"           ,dataOut[2]),
+	        ("courseOGMagnetic"       ,dataOut[3]),
+                ("relativeToMN"           ,dataOut[4]),
+                ("speedOverGroundKnots"   ,dataOut[5]),
+            	("SOGKUnits"              ,dataOut[6]),
+                ("speedOverGroundKMPH"    ,dataOut[7]),
+            	("SOGKMPHUnits"           ,dataOut[8]),
+                ("mode"                   ,dataOut[9]),
+                ("checkSum"               ,dataOut[10]),
+             ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+def GPZDAWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "GPZDA"
+    dataLength = 5
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"              ,str(dateTime)),
+        	    ("UTCTimeStamp"          ,dataOut[1]),
+            	("UTCDay"                ,dataOut[2]),
+	            ("UTCMonth"              ,dataOut[3]),
+        	    ("UTCYear"               ,dataOut[4]),
+                ("checkSum"              ,dataOut[5])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def WIMDAWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "WIMDA"
+    dataLength = 21
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"                        ,str(dateTime)),
+        	    ("barrometricPressureMercury"      ,dataOut[1]),
+            	("BPMUnits"                        ,dataOut[2]),
+                ("barrometricPressureBars"         ,dataOut[3]),
+                ("BPBUnits"                        ,dataOut[4]),
+                ("airTemperature"                  ,dataOut[5]),
+                ("ATUnits"                         ,dataOut[6]),
+                ("waterTemperature"                ,dataOut[7]),
+                ("WTUnits"                         ,dataOut[8]),
+            	("relativeHumidity"                ,dataOut[9]),
+                ("absoluteHumidity"                ,dataOut[10]),
+                ("dewPoint"                        ,dataOut[11]),
+                ("DPUnits"                         ,dataOut[12]),
+                ("windDirectionTrue"               ,dataOut[13]),
+                ("WDTUnits"                        ,dataOut[14]),
+                ("windDirectionMagnetic"           ,dataOut[15]),
+                ("WDMUnits"                        ,dataOut[16]),
+                ("windSpeedKnots"                  ,dataOut[17]),
+                ("WSKUnits"                        ,dataOut[18]),
+                ("windSpeedMetersPerSecond"        ,dataOut[19]),
+                ("WSMPSUnits"                      ,dataOut[20]),
+                ("checkSum"                        ,dataOut[21])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def YXXDRWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "YXXDR"
+    dataLength = 17
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"                       ,str(dateTime)),
+        	    ("temperature"                    ,dataOut[1]),
+            	("relativeWindChillTemperature"   ,dataOut[2]),
+                ("TUnits"                         ,dataOut[3]),
+                ("RWCTID"                         ,dataOut[4]),
+                ("RWCTUnits"                      ,dataOut[5]),
+            	("theoreticalWindChillTemperature",dataOut[6]),
+                ("TUnits2"                        ,dataOut[7]),
+                ("TWCTID"                         ,dataOut[8]),
+                ("TWCTUnits"                      ,dataOut[9]),
+                ("heatIndex"                      ,dataOut[10]),
+                ("HIUnits"                        ,dataOut[11]),
+                ("HIID"                           ,dataOut[12]),
+                ("pressureUnits"                  ,dataOut[13]),
+                ("barrometricPressureBars"        ,dataOut[14]),
+                ("BPBUnits"                       ,dataOut[15]),
+                ("BPBID"                          ,dataOut[16]),
+                ("checkSum"                       ,dataOut[17])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+########################
 
 def getDeltaTime(beginTime,deltaWanted):
     return (time.time() - beginTime)> deltaWanted
