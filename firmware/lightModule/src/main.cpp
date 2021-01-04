@@ -125,6 +125,13 @@ void loop(){
          readTMG39931Mints();
        }
      delay(sensingPeriod);
+  
+   if(SI114XOnline)
+       {
+         readSI114XMints();
+       }
+     delay(sensingPeriod);
+  
 
   delay(sensingPeriod);
      readGL001Mints(groveLightPin);
