@@ -142,7 +142,7 @@ Slide an M5 washer onto an M5 screw and insert form underneath box. Screw black 
 
 ### Step 8
 
-Slide any side of the metal stand onto the black tabs, starting on the side closest to the tabs. Move the metal stand across the box onto the second PG glan. If the metal stand does not feel secure, remove and tighten the black tabs. Reattach and reeveluate.
+Slide any side of the metal stand onto the black tabs, starting on the side closest to the tabs. Move the metal stand across the box until it is level with the second PG glan. If the metal stand does not feel secure, remove and tighten the black tabs. Reattach and reeveluate.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
