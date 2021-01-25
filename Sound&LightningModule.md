@@ -87,7 +87,7 @@ Connector: Mini USB plug
 * 3-D Printed Base
 * 3-D Printed Stand
 * M3 Bolts, Washers, and Nuts
-* M5 Screws, Washers, and Screw-On Tabs
+* M5 Screws, Washers, and T-Slot Fasteners
 * M3 Spacers (2 Thick, 2 Thin)
 * Metal Stand
 * WC-37 Outdoor Enclosure
@@ -136,13 +136,13 @@ Unscrew the bottom piece of 3 of the PG7 glands and place into the 1/2 inch spad
 
 ### Step 7
 
-Slide an M5 washer onto an M5 screw and insert form underneath enclosure. Screw black tabs, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Tabs should be in line with each other. See images for reference. 
+Slide an M5 washer onto an M5 screw and insert form underneath enclosure. Screw T-Slot Fastener, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Fasteners should be in line with each other. See images for reference. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151821.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152225.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152701.jpg?raw=true" width="262" height="225"/>
 
 ### Step 8
 
-Slide any side of the metal stand onto the black tabs, starting on the side closest to the tabs. Move the metal stand across the box until it is level with the second PG glan. If the metal stand does not feel secure, remove and tighten the black tabs. Reattach and reeveluate.
+Slide any side of the metal stand onto the T-Slot Fasteners, starting on the side closest to the tabs. Move the metal stand across the box until it is level with the second PG glan. If the metal stand does not feel secure, remove and tighten the Fasteners. Reattach and reeveluate.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
