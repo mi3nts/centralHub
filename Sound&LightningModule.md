@@ -88,7 +88,7 @@ Connector: Mini USB plug
 * 3-D Printed Stand
 * M3 Bolts, Washers, and Nuts
 * M5 Screws, Washers, and T-Slot Fasteners
-* M3 Spacers (2 Thick, 2 Thin)
+* Nylon OD 3/16" and 5/16" Spacers
 * Metal Stand
 * WC-37 Outdoor Enclosure
 * PG7s and PG9s
@@ -148,7 +148,7 @@ Slide any side of the metal stand onto the T-Slot Fasteners, starting on the sid
 
 ### Step 9
 
-Screw or drill four M3 bolts into the corners of the base on the side with the DFRobot Lightning Distance Sensor. Flip the unit over and add spacers to each bolt. Use the thinner spacers on the side next to the DFRobot Analog Sound Level Meter as shown in image. Add a small amount of hot glue to the bottom of the spacers to secure them to the 3-D Printed Base, being careful not to place glue on the bolt or electronics. 
+Screw or drill four M3 bolts into the corners of the base on the side with the DFRobot Lightning Distance Sensor. Flip the unit over and add spacers to each bolt. Use the 3/16" spacers on the side next to the DFRobot Analog Sound Level Meter as shown in image. Add a small amount of hot glue to the bottom of the spacers to secure them to the 3-D Printed Base, being careful not to place glue on the bolt or electronics. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
