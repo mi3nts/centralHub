@@ -40,8 +40,8 @@ mount /dev/sda1 /mnt
 - Transfer your root partition to the new drive:
 ```
 sudo rsync -axv / /mnt
-cp /boot/cmdline.txt /boot/cmdline.txt.bak
-nano /boot/cmdline.txt
+sudo cp /boot/cmdline.txt /boot/cmdline.txt.bak
+sudo nano /boot/cmdline.txt
 
 ```
 - Change the lines as follows:
@@ -51,7 +51,7 @@ dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=/dev/sda1 rootfsty
 ```
 - Chnaging the Boot Order 
 ```
-nano /mnt/etc/fstab
+sudo nano /mnt/etc/fstab
 ```
 Then add the following line:
 ```
@@ -65,6 +65,9 @@ Comment the SD Boot
 ```
 
 Then restart the system.
+```
+sudo reboot
+```
 
 # Copying the git repo 
 ```
