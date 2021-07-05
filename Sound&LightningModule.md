@@ -164,7 +164,7 @@ The + (VCC), - (GND), C (SCL), and D (SDA) wires coming out from the wire port o
 Apart a micro USB cable at 10 cm away from the USB port and connect the micro USB port to the Arduino Base. Mount the 3-D Print Base with the circuit inside the enclosure by fitting four bolts with spacers and cut end of the micro USB cable should be come out throught side hole of enclosure.
 
 <img src="https://github.com/mi3nts/centralHub/blob/master/soundAndLightningImages/IMG_20210705_143316.jpg?raw=true" width="262" height="225"/>
-<img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/IMG_20210705_143515.jpg?raw=true" width="262" height="225"/>
+<img src="https://github.com/mi3nts/centralHub/blob/master/soundAndLightningImages/IMG_20210705_143515.jpg?raw=true" width="262" height="225"/>
 
 
 
