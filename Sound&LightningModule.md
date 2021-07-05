@@ -87,10 +87,10 @@ Connector: Mini USB plug
 * 3-D Printed Base
 * 3-D Printed Stand
 * M3 Bolts, Washers, and Nuts
-* M5 Screws, Washers, and Screw-On Tabs
-* M3 Spacers (2 Thick, 2 Thin)
+* M5 Screws, Washers, and T-Slot Fasteners
+* Nylon OD 3/16" and 5/16" Spacers
 * Metal Stand
-* Sound and Lighting Protection Cube
+* WC-37 Outdoor Enclosure
 * PG7s and PG9s
 * DFRobot Analog Sound Level Meter
 * DFRobot Lightning Distance Sensor
@@ -124,7 +124,7 @@ Attach the DFRobot Lightning Distance Sensor to the top of the 3-D printed stand
 
 ### Step 5
 
-Orient the cube as shown. Drill 2 holes using the 1/4 inch drill bit, 3 holes using the 1/2 inch spade bit, and one hole using the 5/8 inch spade bit as illustrated in the image
+Orient the enclosure as shown. Drill 2 holes using the 1/4 inch drill bit, 3 holes using the 1/2 inch spade bit, and one hole using the 5/8 inch spade bit as illustrated in the image
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/Box%20measurement%20screenshot.png?raw=true" width="262" height="225"/>
 
@@ -136,24 +136,31 @@ Unscrew the bottom piece of 3 of the PG7 glands and place into the 1/2 inch spad
 
 ### Step 7
 
-Slide an M5 washer onto an M5 screw and insert form underneath box. Screw black tabs, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Tabs should be in line with each other. See images for reference. 
+Slide an M5 washer onto an M5 screw and insert form underneath enclosure. Screw T-Slot Fastener, flat side down, to the top of the box, leaving enough space to slide on metal stand while still remaining secure. Fasteners should be in line with each other. See images for reference. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_151821.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152225.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_152701.jpg?raw=true" width="262" height="225"/>
 
 ### Step 8
 
-Slide any side of the metal stand onto the black tabs, starting on the side closest to the tabs. Move the metal stand across the box onto the second PG glan. If the metal stand does not feel secure, remove and tighten the black tabs. Reattach and reeveluate.
+Slide any side of the metal stand onto the T-Slot Fasteners, starting on the side closest to the tabs. Move the metal stand across the box until it is level with the second PG glan. If the metal stand does not feel secure, remove and tighten the Fasteners. Reattach and reeveluate.
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153205.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_153521.jpg?raw=true" width="262" height="225"/>
 
 ### Step 9
 
-Insert four M3 bolts into the corners of the base on the side with the DFRobot Lightning Distance Sensor. Flip the unit over and add spacers to each bolt. Use the thinner spacers on the side next to the DFRobot Analog Sound Level Meter as shown in image. Add a small amount of hot glue to the bottom of the spacers to secure them to the 3-D Printed 
-Base, being careful not to place glue on the bolt or electronics. 
+Screw or drill four M3 bolts into the corners of the base on the side with the DFRobot Lightning Distance Sensor. Flip the unit over and add spacers to each bolt. Use the 3/16" spacers on the side next to the DFRobot Analog Sound Level Meter as shown in image. Add a small amount of hot glue to the bottom of the spacers to secure them to the 3-D Printed Base, being careful not to place glue on the bolt or electronics. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201216_154233.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111231.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_111330.jpg?raw=true" width="262" height="225"/>
 
 ### Step 10
-With the 3-D printed stand pointed upward, place the completed sensor unit into the box with the metal stand pointed downward. See image for reference. The PG7 hole should line up with the large hole in the 3-D printed base. The four screws with spacers should fit into the four provided threaded inserts in the box. Tighten the four screws. 
+With the 3-D printed stand pointed upward, place the completed sensor unit into the Enclosure with the metal stand pointed downward. See image for reference. The PG7 hole should line up with the large hole in the 3-D printed base. The four bolts with spacers should fit into the four provided threaded inserts in the box. Tighten the four bolts. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112031.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112616.jpg?raw=true" width="262" height="225"/>
+
+### Step 11 
+
+
+
+
+
+
