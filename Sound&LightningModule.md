@@ -156,3 +156,11 @@ Screw or drill four M3 bolts into the corners of the base on the side with the D
 With the 3-D printed stand pointed upward, place the completed sensor unit into the Enclosure with the metal stand pointed downward. See image for reference. The PG7 hole should line up with the large hole in the 3-D printed base. The four bolts with spacers should fit into the four provided threaded inserts in the box. Tighten the four bolts. 
 
 <img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112031.jpg?raw=true" width="262" height="225"/><img src="https://github.com/HomespunCash67/centralHub/blob/master/soundAndLightningImages/20201217_112616.jpg?raw=true" width="262" height="225"/>
+
+### Step 11 
+
+
+
+
+
+
