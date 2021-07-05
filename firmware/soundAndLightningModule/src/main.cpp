@@ -11,7 +11,7 @@
 uint8_t SEN0232Pin = A1;
 
 
-uint16_t sensingPeriod =1000;
+uint16_t sensingPeriod =2500;
 uint16_t initPeriod =1500;
 
 volatile int8_t AS3935IsrTrig = 0;
@@ -21,6 +21,7 @@ volatile int8_t AS3935IsrTrig = 0;
 // // Antenna tuning capcitance (must be integer multiple of 8, 8 - 120 pf)
 // #define AS3935_CAPACITANCE   96
 //
+
 // // I2C address
 // #define AS3935_I2C_ADDR       AS3935_ADD3
 

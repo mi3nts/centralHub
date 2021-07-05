@@ -3,8 +3,9 @@
 
 
 #include <Arduino.h>
-#include <Lib_I2C.h>
+
 #include "DFRobot_AS3935_I2C.h"
+#include <Lib_I2C.h>
 #include "jobsMints.h"
 
 // For SEN0232

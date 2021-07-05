@@ -84,21 +84,9 @@ void setup() {
 void loop(){
     startTime  = millis();
 
-//
 
-  // TMG.readData();
+  // delay(5000);
 
-  // Serial.print("//--------------------------------------//\r\n");
-  // Serial.print("Vis: "); Serial.println(SI1145.ReadVisible());
-  // Serial.print("IR: "); Serial.println(SI1145.ReadIR());
-  // //the real UV value must be div 100 from the reg value , datasheet for more information.
-  // Serial.print("UV: ");  Serial.println((float)SI1145.ReadUV()/100);
-  // Serial.print("PX1: ");  Serial.println(SI1145.ReadProximity(0X26));
-  // Serial.print("PX2: ");  Serial.println(SI1145.ReadProximity(0X28));
-  // Serial.print("PX3: ");  Serial.println(SI1145.ReadProximity(0X2A));
-  delay(5000);
-
-// startTime = millis();
 
   delay(sensingPeriod);
    if(AS7262Online)
@@ -146,3 +134,11 @@ void loop(){
 
     delayMints(millis() - startTime,10000);
 }
+
+
+
+
+
+
+
+

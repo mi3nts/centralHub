@@ -77,7 +77,6 @@ def findMacAddress():
     return "xxxxxxxx"
 
 
-
 dataFolderReference       = "/home/teamlary/mintsData/reference"
 dataFolderMQTTReference   = "/home/teamlary/mintsData/referenceMQTT"
 dataFolder                = "/home/teamlary/mintsData/raw"

@@ -1,7 +1,11 @@
--I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/lib/DFRobot_AS3935_I2C
--I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/lib/devicesMints
--I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/lib/jobsMints
+-I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/include
+-I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/src
 -I/home/teamlary/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src
+-I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/lib/jobsMints
+-I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/lib/devicesMints
+-I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/lib/DFRobot_AS3935_I2C
+-I/home/teamlary/.platformio/packages/framework-arduinoavr/cores/arduino
+-I/home/teamlary/.platformio/packages/framework-arduinoavr/variants/eightanaloginputs
 -I/home/teamlary/.platformio/lib/Adafruit BMP280 Library_ID528
 -I/home/teamlary/.platformio/lib/Adafruit BusIO_ID6214
 -I/home/teamlary/.platformio/lib/Adafruit HTU21DF Library_ID566
@@ -28,12 +32,8 @@
 -I/home/teamlary/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include
 -I/home/teamlary/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed
 -I/home/teamlary/.platformio/packages/toolchain-atmelavr/avr/include
--I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/include
--I/media/teamlary/Team_Lary_1/gitGubRepos/Lakitha/centralHub/firmware/soundAndLightningModule/src
--I/home/teamlary/.platformio/packages/framework-arduinoavr/cores/arduino
--I/home/teamlary/.platformio/packages/framework-arduinoavr/variants/eightanaloginputs
 -I/home/teamlary/.platformio/packages/tool-unity
--DPLATFORMIO=40303
+-DPLATFORMIO=50101
 -DARDUINO_AVR_NANO
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR
