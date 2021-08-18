@@ -1,6 +1,36 @@
 
 #include "devicesMints.h"
 
+
+// BME680 ---------------------------------------
+bool initializeBME680Mints(){
+  if (bme680.init()) {
+    Serial.println("BME680 Initiated");
+    delay(1);
+    return true;
+  }else{
+    Serial.println("BME680 not found");
+    delay(1);
+    return false;
+  }
+
+}
+
+void readBME680Mints(){
+  if (!bme680.read_sensor_data()) {
+    String readings[4] = { String(bme680.sensor_result_value.temperature), 
+                           String(bme680.sensor_result_value.pressure / 1000.0) ,
+                           String(bme680.sensor_result_value.humidity) ,
+                           String(bme680.sensor_result_value.gas / 1000.0),
+                           };
+  
+  sensorPrintMints("BME680",readings,4);
+  }
+
+
+}
+
+
 // bool initializePPD42NSDuoMints(){
 //       pinMode(PPD42NSPinMid,INPUT);
 //       pinMode(PPD42NSPinPM10,INPUT);

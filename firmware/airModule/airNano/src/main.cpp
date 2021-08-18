@@ -39,7 +39,7 @@ void setup() {
 
   delay(initPeriod);
   BME280Online = initializeBME280Mints();
-  //
+
   delay(initPeriod);
   MGS001Online =  initializeMGS001Mints();
 

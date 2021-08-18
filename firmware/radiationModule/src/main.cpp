@@ -12,14 +12,20 @@ bool    LIBRADOnline;
 uint8_t LIBRADPin   = 2;
 long    LIBRADCount = 0;
 
-unsigned long initializationPeriod = 1500;
+bool BME680Online;
 
+
+#define IIC_ADDR  uint8_t(0x77) // This needs to change on other central nodes - only for cn 4 
+Seeed_BME680 bme680(IIC_ADDR); /* IIC PROTOCOL */
+
+
+uint16_t initPeriod = 1500;
 
 void setup() {
   initializeSerialMints();
-  // delay(1000);
-  // PPD42NSOnline      = initializePPD42NSDuoMints();
-  delay(1000);
+  delay(initPeriod);
+  BME680Online = initializeBME680Mints();
+  delay(initPeriod);
   LIBRADOnline       = initializeLIBRADMints();
 }
 
@@ -27,11 +33,10 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
 
-//  if(PPD42NSOnline)
-//         {
-//           readPPD42NSDuoMints(30);
-//         }
-
+ if(BME680Online)
+    {
+      readBME680Mints();
+    }
 
   if(LIBRADOnline)
       {

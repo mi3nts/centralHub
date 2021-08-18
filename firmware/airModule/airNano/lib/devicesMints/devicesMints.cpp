@@ -30,8 +30,9 @@ void readBME280Mints(){
   sensorPrintMints("BME280",readings,4);
 }
 
-//
-//
+
+
+
 // // // MGS001  ---------------------------------------
 
 bool initializeMGS001Mints(){
@@ -81,21 +82,9 @@ bool initializeSCD30Mints(){
 }
 
 void readSCD30Mints(){
-
-  uint16_t co2         = scd.getCO2();
-  uint16_t temperature = scd.getTemperature();
-  uint16_t humidity    = scd.getHumidity();
-
-  String readings[3] = { String(co2), String(temperature) , String(humidity) };
+  String readings[3] = { String(scd.getCO2()), String(scd.getTemperature()) , String(scd.getHumidity()) };
   sensorPrintMints("SCD30",readings,3);
-
 }
-
-
-
-
-
-
 
 bool initializeHM3301Mints(){
   if (!hm3301.init()) {
@@ -120,112 +109,14 @@ void readHM3301Mints(){
     if(!hm3301.read_sensor_value(hm3301Data,29))
     {
        
-        // Serial.println("pm1:");
         pm1 = (u16)hm3301Data[4]<<8|hm3301Data[5];
-        // Serial.println(pm1);
-
-        // Serial.println("pm2_5:");
         pm2_5 = (u16)hm3301Data[6]<<8|hm3301Data[7];
-        // Serial.println(pm2_5);
-
-        // Serial.println("pm10:");
         pm10 = (u16)hm3301Data[8]<<8|hm3301Data[9];
-        // Serial.println(pm10);
-
         String readings[3] = { String(pm1), String(pm2_5) , String(pm10) };
         sensorPrintMints("HM3301",readings,3);
     }
 
-    // parse_result_value(buf);
-    // parse_result(buf);
-    // delay(5000);
 }
-
-
-
-
-
-
-
-
-
-
-
-//
-// // INA219  ---------------------------------------
-//
-// bool initializeINA219Mints(){
-//     ina.begin();
-//     Serial.println("INA219 Initiated");
-//     delay(1);
-//     return true;
-// }
-//
-// void readINA219Mints(){
-//
-//   float shuntVoltage  = ina.getShuntVoltage_mV();
-//   float busVoltage    = ina.getBusVoltage_V();
-//   float currentMA     = ina.getCurrent_mA();
-//   float powerMW      = ina.getPower_mW();
-//   float loadVoltage  = busVoltage + (shuntVoltage / 1000);
-//
-//
-//   String readings[5] = { String(shuntVoltage,4) , String(busVoltage,4),  String(currentMA,4) , String(powerMW,4), String(loadVoltage,4)};
-//   sensorPrintMints("INA219",readings,5);
-//
-//
-// }
-
-//
-// //
-// // // OPCN2  ---------------------------------------
-
-// bool initializeOPCN2Mints(){
-
-//   return opc.initialize();
-
-// }
-
-// void readOPCN2Mints(){
-
-//   struct histogramData  allData= opc.readHistogramData();
-
-//   String readings[28] =  { \
-//                           String(allData.valid), \
-//                           String(allData.binCount0), \
-//                           String(allData.binCount1), \
-//                           String(allData.binCount2), \
-//                           String(allData.binCount3), \
-//                           String(allData.binCount4), \
-//                           String(allData.binCount5), \
-//                           String(allData.binCount6), \
-//                           String(allData.binCount7), \
-//                           String(allData.binCount8), \
-//                           String(allData.binCount9), \
-//                           String(allData.binCount10), \
-//                           String(allData.binCount11), \
-//                           String(allData.binCount12), \
-//                           String(allData.binCount13), \
-//                           String(allData.binCount14), \
-//                           String(allData.binCount15), \
-//                           String(allData.bin1TimeToCross), \
-//                           String(allData.bin3TimeToCross), \
-//                           String(allData.bin5TimeToCross), \
-//                           String(allData.bin7TimeToCross), \
-//                           String(allData.sampleFlowRate), \
-//                           String(allData.temperatureOrPressure), \
-//                           String(allData.samplingPeriod), \
-//                           String(allData.checkSum), \
-//                           String(allData.pm1,2), \
-//                           String(allData.pm2_5,2), \
-//                           String(allData.pm10,2) \
-//                         };
-//   sensorPrintMints("OPCN2",readings,28);
-
-
-
-// }
-
 
 
 bool initializeOPCN3Mints(){
