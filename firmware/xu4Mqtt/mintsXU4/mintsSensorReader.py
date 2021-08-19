@@ -28,26 +28,45 @@ from collections import OrderedDict
 import netifaces as ni
 import math
 
-macAddress             = mD.macAddress
-dataFolder             = mD.dataFolder
-dataFolderReference    = mD.dataFolderReference
 
-latestDisplayOn        = mD.latestDisplayOn
+macAddress     = mD.macAddress
+dataFolder     = mD.dataFolder
+latestDisplayOn = mD.latestDisplayOn
+dataFolderMQTT = mD.dataFolderMQTT
+latestOn       = mD.latestOn
+mqttOn         = mD.mqttOn
+
+
 
 
 def sensorFinisher(dateTime,sensorName,sensorDictionary):
+    #Getting Write Path
+    writePath = getWritePath(sensorName,dateTime)
+    exists = directoryCheck(writePath)
+    writeCSV2(writePath,sensorDictionary,exists)
+    print(writePath)
+    if(latestOn):
+       mL.writeJSONLatest(sensorDictionary,sensorName)
+    if(mqttOn):
+       mL.writeMQTTLatest(sensorDictionary,sensorName)   
+
+    print("-----------------------------------")
+    print(sensorName)
+    print(sensorDictionary)
+
+
+def sensorFinisherReference(dateTime,sensorName,sensorDictionary):
     # Getting Write Path
     print("-----------------------------------")
-    writePath = getWritePath(sensorName,dateTime)
+    writePath = getWritePathReference(sensorName,dateTime)
     exists    = directoryCheck(writePath)
     writeCSV2(writePath,sensorDictionary,exists)
     print(writePath)
     if(latestDisplayOn):
-       mL.writeJSONLatest(sensorDictionary,sensorName)
+       mL.writeJSONLatestReference(sensorDictionary,sensorName)
     print(sensorName)
     print(sensorDictionary)
     print("-----------------------------------")
-
 
 
 def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
@@ -58,7 +77,9 @@ def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
     print(writePath)
     if(latestDisplayOn):
        mL.writeJSONLatest(sensorDictionary,sensorName)
-
+    if(mqttOn):
+       mL.writeMQTTLatest(sensorDictionary,sensorName)   
+        
     print("-----------------------------------")
     print(sensorName)
     print(sensorDictionary)
@@ -79,6 +100,8 @@ def sensorSplit(dataQuota,dateTime):
         sensorSend(sensorID,sensorData,dateTime)
 
 def sensorSend(sensorID,sensorData,dateTime):
+    if(sensorID=="BME680"):
+        BME680Write(sensorData,dateTime)
     if(sensorID=="BME280"):
         BME280Write(sensorData,dateTime)
     if(sensorID=="MGS001"):
@@ -122,9 +145,46 @@ def sensorSend(sensorID,sensorData,dateTime):
     if(sensorID=="SI114X"):
         SI114XWrite(sensorData, dateTime)
 
-
-
-
+        
+def IPS7100Write(sensorData,dateTime):
+    dataOut    = sensorData.split(',')
+    sensorName = "IPS7100"
+    dataLength = 30
+    if(len(dataOut) == (dataLength)):
+        sensorDictionary =  OrderedDict([
+                ("dateTime" , str(dateTime)), # always the same
+        		("pc0_1"  ,dataOut[1]), 
+            	("pc0_3"  ,dataOut[3]),
+                ("pc0_5"  ,dataOut[5]),
+                ("pc1_0"  ,dataOut[7]),
+            	("pc2_5"  ,dataOut[9]),
+        		("pc5_0"  ,dataOut[11]), 
+            	("pc10_0" ,dataOut[13]),
+                ("pm0_1"  ,dataOut[15]),
+            	("pm0_3"  ,dataOut[17]),
+        		("pm0_5"  ,dataOut[19]), 
+            	("pm1_0"  ,dataOut[21]),
+                ("pm2_5"  ,dataOut[23]),
+            	("pm5_0"  ,dataOut[25]),         
+                ("pm10_0"  ,dataOut[27])
+                ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+        
+def BME680Write(sensorData,dateTime):
+    dataOut    = sensorData.split(':')
+    sensorName = "BME680"
+    dataLength = 4
+    if(len(dataOut) == (dataLength +1)):
+        sensorDictionary =  OrderedDict([
+                ("dateTime"     , str(dateTime)), # always the same
+        		("temperature"  ,dataOut[0]), # check with arduino code
+            	("pressure"     ,dataOut[1]),
+                ("humidity"     ,dataOut[2]),
+            	("gas"          ,dataOut[3])
+                ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+        
+        
 def BME280Write(sensorData,dateTime):
     dataOut    = sensorData.split(':')
     sensorName = "BME280"
@@ -712,6 +772,11 @@ def getWritePathSnaps(labelIn,dateTime):
     writePath = dataFolder+"/"+macAddress+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/snaps/MINTS_"+ macAddress+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) + "_" +str(dateTime.hour).zfill(2) + "_" +str(dateTime.minute).zfill(2)+ "_" +str(dateTime.second).zfill(2) +".png"
     return writePath;
 
+def getWritePathReference(labelIn,dateTime):
+    #Example  : MINTS_0061_OOPCN3_2019_01_04.csv
+    writePath = dataFolderReference+"/"+macAddress+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/"+ "MINTS_"+ macAddress+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) +".csv"
+
+    return writePath;
 
 
 def getWritePath(labelIn,dateTime):
@@ -719,14 +784,7 @@ def getWritePath(labelIn,dateTime):
     writePath = dataFolder+"/"+macAddress+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/"+ "MINTS_"+ macAddress+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) +".csv"
     return writePath;
 
-def getWritePathReference(labelIn,dateTime):
-    #Example  : MINTS_0061_OOPCN3_2019_01_04.csv
-    writePath = dataFolderReference+"/"+macAddress+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(d$
-    return writePath;
-
-def getWritePath(labelIn,dateTime):
-def getWritePath(labelIn,dateTime):
-ctionaryFromPath(dirPath):
+def getListDictionaryFromPath(dirPath):
     print("Reading : "+ dirPath)
     reader = csv.DictReader(open(dirPath))
     reader = list(reader)

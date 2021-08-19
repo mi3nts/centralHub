@@ -11,7 +11,7 @@ from time import mktime
 
 
 dataFolder          = mD.dataFolder
-ipsPort             = mD.ipsPort
+ipsPort             = mD.ipsPorts[0]
 baudRate            = 9600
 ipsFrequency        = mD.ipsFrequency
 

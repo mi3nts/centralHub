@@ -6,12 +6,12 @@ from mintsXU4 import mintsDefinitions as mD
 import sys
 
 dataFolder  = mD.dataFolder
-ipsPort     = mD.ipsPort
+ipsPort     = mD.ipsPorts[0]
 baudRate    = 115200
 
 def main():
     ser = serial.Serial(
-    port= nanoPorts[portNum],\
+    port= ipsPort,\
     baudrate=baudRate,\
     parity  =serial.PARITY_NONE,\
     stopbits=serial.STOPBITS_ONE,\
@@ -28,13 +28,13 @@ def main():
     while True:
         try:
             for c in ser.read():
+#                print(chr(c))
                 line.append(chr(c))
-                if chr(c) == '\n:
+                if chr(c) == '\n':
                     dataString     = (''.join(line))
                     dataStringPost = dataString.replace('\n', '')
                     print("================")
-                    print(dataStringPost)
-                    # mSR.dataSplit(dataStringPost,datetime.datetime.now())
+                    mSR.IPS7100Write(dataStringPost,datetime.datetime.now())
                     line = []
                     break
         except:
@@ -48,4 +48,4 @@ if __name__ == "__main__":
     print("    MINTS    ")
     print("=============")
     print("Monitoring IPS7100 on port: {0}".format(ipsPort) + " with baudrate " + str(baudRate))
-    
+    main()    
