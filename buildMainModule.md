@@ -1,3 +1,3 @@
 # MAIN MODULE 
 
-Start by formatting the WD USB hard drive to the **_ext4_** filesystem. 
+Start by drilling 5 holes on a side of Main module case with 1/2 inch drill bit.
