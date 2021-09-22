@@ -31,7 +31,7 @@ def main():
     lastWIMDA = time.time()
     lastYXXDR = time.time()
 
-    delta  = 3
+    delta  = 5
     print("connected to: " + ser.portstr)
 
     #this will store the line
@@ -73,9 +73,14 @@ def main():
                     mSR.WIMDAWriteAM(dataString,dateTime)
                     lastWIMDA = time.time()
                     # print(str(dataString))
-
+             #   if (dataString.startswith("$YXXDR,")):
+             #       print("YX1")
+             #       mSR.YXXDRWriteAM(dataString,dateTime)
+             #       lastYXXDR = time.time()
+                    
+                    
                 if (dataString.startswith("$YXXDR,") and mSR.getDeltaTimeAM(lastYXXDR,delta)):
-                    mSR.YXXDRWriteAM(dataString,dateTime)
+                    mSR.YXXDRWriteAM2(dataString,dateTime)
                     lastYXXDR = time.time()
                     # print(str(dataString))
 

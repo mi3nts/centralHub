@@ -7,8 +7,8 @@ from collections import OrderedDict
 import netifaces as ni
 from requests import get
 
-from mintsXU4 import mintsSensorReader as mSR
-from mintsXU4 import mintsDefinitions  as mD
+from mintsJetson import mintsSensorReader as mSR
+from mintsJetson import mintsDefinitions  as mD
 
 dataFolder = mD.dataFolder
 
