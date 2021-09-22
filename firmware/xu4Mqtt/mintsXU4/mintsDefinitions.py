@@ -87,8 +87,8 @@ ozonePort             = findOzonePort()
 ipsPorts              = findIPSPorts()
 show2Port             = findPort("CP2104 USB to UART Bridge Controller")
 macAddress            = findMacAddress()
-latestDisplayOn       = True
-latestOn              = True
+latestDisplayOn       = False
+latestOn              = False
 
 # For MQTT 
 mqttOn                    = True
