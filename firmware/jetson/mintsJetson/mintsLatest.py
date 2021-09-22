@@ -3,7 +3,7 @@ import serial
 import datetime
 import os
 import csv
-import deepdish as dd
+#import deepdish as dd
 import time
 import paho.mqtt.client as mqttClient
 import yaml
@@ -91,8 +91,8 @@ def writeJSONLatest(sensorDictionary,sensorName):
     try:
         with open(directoryIn,'w') as fp:
             json.dump(sensorDictionary, fp)
-
-    except:
+    except Exception as e:
+        print("[ERROR] Could not publish data, error: {}".format(e))
         print("Json Data Not Written")
 
 def writeJSONLatestReference(sensorDictionary,sensorName):

@@ -612,8 +612,8 @@ def GPGGAWriteAM(sensorData,dateTime):
     sensorName = "GPGGA"
     dataLength = 15
     gpsQuality = int(dataOut[6])
-	
-    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    #print(dataOut)
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
     if((len(dataOut) == (dataLength +1)) and (gpsQuality>0)):
         sensorDictionary = OrderedDict([
                 ("dateTime"              ,str(dateTime)),
@@ -640,7 +640,8 @@ def GPVTGWriteAM(sensorData,dateTime):
     dataOut    = sensorData.replace('*',',').split(',')
     sensorName = "GPVTG"
     dataLength = 10
-    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    #print(dataOut)
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
     if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"               ,str(dateTime)),
@@ -661,7 +662,8 @@ def GPZDAWriteAM(sensorData,dateTime):
     dataOut    = sensorData.replace('*',',').split(',')
     sensorName = "GPZDA"
     dataLength = 5
-    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    #print(dataOut)
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
     if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"              ,str(dateTime)),
@@ -679,7 +681,7 @@ def WIMDAWriteAM(sensorData,dateTime):
     dataOut    = sensorData.replace('*',',').split(',')
     sensorName = "WIMDA"
     dataLength = 21
-    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
     if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"                        ,str(dateTime)),
@@ -709,31 +711,22 @@ def WIMDAWriteAM(sensorData,dateTime):
         sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 
-def YXXDRWriteAM(sensorData,dateTime):
+def YXXDRWriteAM2(sensorData,dateTime):
     dataOut    = sensorData.replace('*',',').split(',')
     sensorName = "YXXDR"
-    dataLength = 17
-    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+    dataLength = 10
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"                       ,str(dateTime)),
-        	    ("temperature"                    ,dataOut[1]),
-            	("relativeWindChillTemperature"   ,dataOut[2]),
-                ("TUnits"                         ,dataOut[3]),
-                ("RWCTID"                         ,dataOut[4]),
-                ("RWCTUnits"                      ,dataOut[5]),
-            	("theoreticalWindChillTemperature",dataOut[6]),
-                ("TUnits2"                        ,dataOut[7]),
-                ("TWCTID"                         ,dataOut[8]),
-                ("TWCTUnits"                      ,dataOut[9]),
-                ("heatIndex"                      ,dataOut[10]),
-                ("HIUnits"                        ,dataOut[11]),
-                ("HIID"                           ,dataOut[12]),
-                ("pressureUnits"                  ,dataOut[13]),
-                ("barrometricPressureBars"        ,dataOut[14]),
-                ("BPBUnits"                       ,dataOut[15]),
-                ("BPBID"                          ,dataOut[16]),
-                ("checkSum"                       ,dataOut[17])
+        	    ("angularDisplacement"            ,dataOut[1]),
+            	("pitch"                          ,dataOut[2]),
+                ("degrees"                        ,dataOut[3]),
+                ("pitchOfVessel"                  ,dataOut[4]),
+                ("angularDisplacement"            ,dataOut[5]),
+            	("roll"                           ,dataOut[6]),
+                ("degrees2"                       ,dataOut[7]),
+                ("rollOfvessel"                   ,dataOut[8])
         	     ])
 
         sensorFinisher(dateTime,sensorName,sensorDictionary)
