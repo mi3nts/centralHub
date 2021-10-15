@@ -17,7 +17,7 @@ import serial
 import datetime
 import os
 import csv
-import deepdish as dd
+#import deepdish as dd
 from mintsXU4 import mintsLatest as mL
 from mintsXU4 import mintsDefinitions as mD
 from getmac import get_mac_address
@@ -144,6 +144,208 @@ def sensorSend(sensorID,sensorData,dateTime):
         HM3301Write(sensorData, dateTime)
     if(sensorID=="SI114X"):
         SI114XWrite(sensorData, dateTime)
+    # Added on May 21 st, 2020 
+    if(sensorID=="SEN0232"):
+        SEN0232Write(sensorData, dateTime)
+    if(sensorID=="AS3935"):
+        AS3935Write(sensorData, dateTime)
+    # End (Added on May 21 st, 2020 )
+
+    
+
+### FOR AIR MAR - Added January 4 2021 
+
+def getDeltaTimeAM(beginTime,deltaWanted):
+    return (time.time() - beginTime)> deltaWanted
+
+def HCHDTWriteAM(sensorData,dateTime):
+
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "HCHDT"
+    dataLength = 3
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"    ,str(dateTime)),
+        	    ("heading"      ,dataOut[1]),
+            	("HID"          ,dataOut[2]),
+                ("checkSum"     ,dataOut[3]),
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+def WIMWVWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "WIMWV"
+    dataLength = 6
+    print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"       ,str(dateTime)),
+        	("windAngle"      ,dataOut[1]),
+            	("WAReference"    ,dataOut[2]),
+                ("windSpeed"      ,dataOut[3]),
+            	("WSUnits" ,       dataOut[4]),
+            	("status"         ,dataOut[5]),
+                ("checkSum"       ,dataOut[6]),
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def GPGGAWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "GPGGA"
+    dataLength = 15
+    gpsQuality = int(dataOut[6])
+    #print(dataOut)
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if((len(dataOut) == (dataLength +1)) and (gpsQuality>0)):
+        sensorDictionary = OrderedDict([
+                ("dateTime"              ,str(dateTime)),
+        	("UTCTimeStamp"          ,dataOut[1]),
+            	("latitude"              ,dataOut[2]),
+                ("latDirection"          ,dataOut[3]),
+                ("longitude"             ,dataOut[4]),
+                ("lonDirection"          ,dataOut[5]),
+            	("gpsQuality"            ,dataOut[6]),
+                ("numberOfSatellites"    ,dataOut[7]),
+                ("horizontalDilution"    ,dataOut[8]),
+                ("altitude"              ,dataOut[9]),
+                ("AUnits"                ,dataOut[10]),
+                ("geoidalSeparation"     ,dataOut[11]),
+                ("GSUnits"               ,dataOut[12]),
+                ("ageOfDifferential"     ,dataOut[13]),
+                ("stationID"             ,dataOut[14]),
+                ("checkSum"              ,dataOut[15])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+def GPVTGWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "GPVTG"
+    dataLength = 10
+    #print(dataOut)
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"               ,str(dateTime)),
+        	("courseOGTrue"           ,dataOut[1]),
+            	("relativeToTN"           ,dataOut[2]),
+	        ("courseOGMagnetic"       ,dataOut[3]),
+                ("relativeToMN"           ,dataOut[4]),
+                ("speedOverGroundKnots"   ,dataOut[5]),
+            	("SOGKUnits"              ,dataOut[6]),
+                ("speedOverGroundKMPH"    ,dataOut[7]),
+            	("SOGKMPHUnits"           ,dataOut[8]),
+                ("mode"                   ,dataOut[9]),
+                ("checkSum"               ,dataOut[10]),
+             ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+def GPZDAWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "GPZDA"
+    dataLength = 5
+    #print(dataOut)
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"              ,str(dateTime)),
+        	    ("UTCTimeStamp"          ,dataOut[1]),
+            	("UTCDay"                ,dataOut[2]),
+	            ("UTCMonth"              ,dataOut[3]),
+        	    ("UTCYear"               ,dataOut[4]),
+                ("checkSum"              ,dataOut[5])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def WIMDAWriteAM(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "WIMDA"
+    dataLength = 21
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"                        ,str(dateTime)),
+        	    ("barrometricPressureMercury"      ,dataOut[1]),
+            	("BPMUnits"                        ,dataOut[2]),
+                ("barrometricPressureBars"         ,dataOut[3]),
+                ("BPBUnits"                        ,dataOut[4]),
+                ("airTemperature"                  ,dataOut[5]),
+                ("ATUnits"                         ,dataOut[6]),
+                ("waterTemperature"                ,dataOut[7]),
+                ("WTUnits"                         ,dataOut[8]),
+            	("relativeHumidity"                ,dataOut[9]),
+                ("absoluteHumidity"                ,dataOut[10]),
+                ("dewPoint"                        ,dataOut[11]),
+                ("DPUnits"                         ,dataOut[12]),
+                ("windDirectionTrue"               ,dataOut[13]),
+                ("WDTUnits"                        ,dataOut[14]),
+                ("windDirectionMagnetic"           ,dataOut[15]),
+                ("WDMUnits"                        ,dataOut[16]),
+                ("windSpeedKnots"                  ,dataOut[17]),
+                ("WSKUnits"                        ,dataOut[18]),
+                ("windSpeedMetersPerSecond"        ,dataOut[19]),
+                ("WSMPSUnits"                      ,dataOut[20]),
+                ("checkSum"                        ,dataOut[21])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def YXXDRWriteAM2(sensorData,dateTime):
+    dataOut    = sensorData.replace('*',',').split(',')
+    sensorName = "YXXDR"
+    dataLength = 10
+    #print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
+    if(len(dataOut) ==(dataLength) and bool(dataOut[1])):
+        sensorDictionary = OrderedDict([
+                ("dateTime"                       ,str(dateTime)),
+        	    ("angularDisplacement"            ,dataOut[1]),
+            	("pitch"                          ,dataOut[2]),
+                ("degrees"                        ,dataOut[3]),
+                ("pitchOfVessel"                  ,dataOut[4]),
+                ("angularDisplacement"            ,dataOut[5]),
+            	("roll"                           ,dataOut[6]),
+                ("degrees2"                       ,dataOut[7]),
+                ("rollOfvessel"                   ,dataOut[8])
+        	     ])
+
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+########################    
+# Added on May 21 st, 2020 
+def SEN0232Write(sensorData,dateTime):
+    dataOut    = sensorData.split(':')
+    sensorName = "SEN0232"
+    dataLength = 3
+    if(len(dataOut) == (dataLength +1)):
+        sensorDictionary =  OrderedDict([
+                ("dateTime"   , str(dateTime)), 
+        		("rawAnalog"  ,dataOut[0]), 
+            	("rawVoltage" ,dataOut[1]),
+                ("dB"         ,dataOut[2])
+                ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+
+
+def AS3935Write(sensorData,dateTime):
+    dataOut    = sensorData.split(':')
+    sensorName = "AS3935"
+    dataLength = 3
+    if(len(dataOut) == (dataLength +1)):
+        sensorDictionary =  OrderedDict([
+                ("dateTime" , str(dateTime)), 
+        		("source"   ,dataOut[0]), 
+            	("energy"   ,dataOut[1]),
+                ("distance" ,dataOut[2])
+                ])
+        sensorFinisher(dateTime,sensorName,sensorDictionary)
+# End (Added on May 21 st, 2020)
 
         
 def IPS7100Write(sensorData,dateTime):

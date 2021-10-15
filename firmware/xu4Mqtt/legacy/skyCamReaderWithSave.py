@@ -7,9 +7,9 @@ import pickle
 from skimage import io, color
 import cv2
 
-from mintsJetson import mintsSkyCamReader as mSCR
-from mintsJetson import mintsSensorReader as mSR
-from mintsJetson import mintsDefinitions as mD
+from mintsXU4 import mintsSkyCamReader as mSCR
+from mintsXU4 import mintsSensorReader as mSR
+from mintsXU4 import mintsDefinitions as mD
 
 
 dataFolder = mD.dataFolder
@@ -23,7 +23,6 @@ def main():
 
 
     onboardCapture = True
-   
     try:
         start = time.time()
         currentImage,imagePath =  mSCR.getSnapShotXU4(subFolder)

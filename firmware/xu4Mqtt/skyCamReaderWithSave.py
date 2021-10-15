@@ -23,6 +23,7 @@ def main():
 
 
     onboardCapture = True
+   
     try:
         start = time.time()
         currentImage,imagePath =  mSCR.getSnapShotXU4(subFolder)
