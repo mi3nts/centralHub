@@ -1,6 +1,4 @@
 
-
-
 import serial
 import datetime
 from mintsXU4 import mintsSensorReader as mSR
@@ -37,56 +35,55 @@ def main():
     #this will store the line
     line = []
     while True:
+        try:
+            for c in ser.read():
+                line.append(chr(c))
+                if chr(c) == '\n':
+                    dataString     = (''.join(line)).replace("\r\n","")
+                    dateTime  = datetime.datetime.now()
 
-        for c in ser.read():
-            line.append(chr(c))
-            if chr(c) == '\n':
-                dataString     = (''.join(line)).replace("\r\n","")
-                dateTime  = datetime.datetime.now()
-
-                if (dataString.startswith("$HCHDT") and mSR.getDeltaTimeAM(lastHCHDT,delta)):
-                    mSR.HCHDTWriteAM(dataString,dateTime)
-                    lastHCHDT = time.time()
+                    if (dataString.startswith("$HCHDT") and mSR.getDeltaTimeAM(lastHCHDT,delta)):
+                        mSR.HCHDTWriteAM(dataString,dateTime)
+                        lastHCHDT = time.time()
                     # print(str(dataString))
 
-                if (dataString.startswith("$WIMWV") and mSR.getDeltaTimeAM(lastWIMWV,delta)):
-                    mSR.WIMWVWriteAM(dataString,dateTime)
-                    lastWIMWV = time.time()
+                    if (dataString.startswith("$WIMWV") and mSR.getDeltaTimeAM(lastWIMWV,delta)):
+                        mSR.WIMWVWriteAM(dataString,dateTime)
+                        lastWIMWV = time.time()
                     # print(str(dataString))
 
-                if (dataString.startswith("$GPGGA") and mSR.getDeltaTimeAM(lastGPGGA,delta)):
-                    mSR.GPGGAWriteAM(dataString,dateTime)
-                    lastGPGGA = time.time()
+                    if (dataString.startswith("$GPGGA") and mSR.getDeltaTimeAM(lastGPGGA,delta)):
+                        mSR.GPGGAWriteAM(dataString,dateTime)
+                        lastGPGGA = time.time()
                     # print(str(dataString))
 
-                if (dataString.startswith("$GPVTG") and mSR.getDeltaTimeAM(lastGPVTG,delta)):
-                    mSR.GPVTGWriteAM(dataString,dateTime)
-                    lastGPVTG = time.time()
+                    if (dataString.startswith("$GPVTG") and mSR.getDeltaTimeAM(lastGPVTG,delta)):
+                        mSR.GPVTGWriteAM(dataString,dateTime)
+                        lastGPVTG = time.time()
                     # print(str(dataString))
 
-                if (dataString.startswith("$GPZDA") and mSR.getDeltaTimeAM(lastGPZDA,delta)):
-                    mSR.GPZDAWriteAM(dataString,dateTime)
-                    lastGZDA = time.time()
+                    if (dataString.startswith("$GPZDA") and mSR.getDeltaTimeAM(lastGPZDA,delta)):
+                        mSR.GPZDAWriteAM(dataString,dateTime)
+                        lastGZDA = time.time()
                     # print(str(dataString))
 
-                if (dataString.startswith("$WIMDA") and mSR.getDeltaTimeAM(lastWIMDA,delta)):
-                    mSR.WIMDAWriteAM(dataString,dateTime)
-                    lastWIMDA = time.time()
+                    if (dataString.startswith("$WIMDA") and mSR.getDeltaTimeAM(lastWIMDA,delta)):
+                        mSR.WIMDAWriteAM(dataString,dateTime)
+                        lastWIMDA = time.time()
                     # print(str(dataString))
-             #   if (dataString.startswith("$YXXDR,")):
-             #       print("YX1")
-             #       mSR.YXXDRWriteAM(dataString,dateTime)
-             #       lastYXXDR = time.time()
+            
                     
-                    
-                if (dataString.startswith("$YXXDR,") and mSR.getDeltaTimeAM(lastYXXDR,delta)):
-                    mSR.YXXDRWriteAM2(dataString,dateTime)
-                    lastYXXDR = time.time()
+                    if (dataString.startswith("$YXXDR,") and mSR.getDeltaTimeAM(lastYXXDR,delta)):
+                        mSR.YXXDRWriteAM2(dataString,dateTime)
+                        lastYXXDR = time.time()
                     # print(str(dataString))
 
-                line = []
-                break
-
+                    line = []
+                    break
+        except:
+            print("Incomplete String Read")
+            line = []
+                    
     ser.close()
 
 
