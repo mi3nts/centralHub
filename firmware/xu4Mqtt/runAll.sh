@@ -9,7 +9,9 @@ python3 nanoReader.py 2 &
 sleep 5
 python3 ips7100ReaderV1.py & 
 sleep 5 
-python3 ozoneReader.py &  
+python3 ozoneQLMDuoReader.py 0 &  
+sleep 5 
+python3 ozoneQLMDuoReader.py 1 &  
 sleep 5 
 python3 GPSReader.py &
 sleep 5

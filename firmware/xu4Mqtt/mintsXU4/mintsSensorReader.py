@@ -151,8 +151,18 @@ def sensorSend(sensorID,sensorData,dateTime):
         AS3935Write(sensorData, dateTime)
     # End (Added on May 21 st, 2020 )
 
-    
 
+# For QLM RAD Reader - Added April 4 2022      
+def QLMRAD001Write(dataString,dateTime):
+    sensorName = "QLMRAD001"
+    if len(dataString)==4:
+        sensorDictionary = OrderedDict([
+            ("dateTime"    ,str(dateTime)),
+            ("event"      ,dataString),
+                        ])    
+        sensorFinisher(dateTime,sensorName,sensorDictionary)  
+    
+    
 ### FOR AIR MAR - Added January 4 2021 
 
 def getDeltaTimeAM(beginTime,deltaWanted):
