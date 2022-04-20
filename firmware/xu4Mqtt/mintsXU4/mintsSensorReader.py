@@ -880,7 +880,7 @@ def GPSGPGGA2Write(dataString,dateTime):
         sensorName = "GPSGPGGA2"
         sensorDictionary = OrderedDict([
                 ("dateTime"          ,str(dateTime)),
-                ("timestamp"         ,sensorData.timestamp),
+                ("timestamp"         ,str(sensorData.timestamp)),
                 ("latitudeCoordinate" ,getLatitudeCords(sensorData.lat,sensorData.lat_dir)),
                 ("longitudeCoordinate",getLongitudeCords(sensorData.lon,sensorData.lon_dir)),
                 ("latitude"          ,sensorData.lat),
@@ -933,7 +933,7 @@ def GPSGPRMC2Write(dataString,dateTime):
         sensorName = "GPSGPRMC2"
         sensorDictionary = OrderedDict([
                 ("dateTime"             ,str(dateTime)),
-                ("timestamp"            ,sensorData.timestamp),
+                ("timestamp"            ,str(sensorData.timestamp)),
                 ("status"               ,sensorData.status),
                 ("latitudeCoordinate"    ,getLatitudeCords(sensorData.lat,sensorData.lat_dir)),
                 ("longitudeCoordinate"   ,getLongitudeCords(sensorData.lon,sensorData.lon_dir)),
