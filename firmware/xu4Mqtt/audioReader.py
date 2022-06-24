@@ -1,4 +1,4 @@
-from importlib_metadata import files
+#from importlib_metadata import files
 
 from scipy.io.wavfile import write
 import os
@@ -12,13 +12,16 @@ import datetime
 import numpy as np
 import pandas as pd
 
+import time
+
+time.sleep(1) 
+
 from mintsXU4 import mintsSensorReader as mSR
 from mintsXU4 import mintsDefinitions as mD
 
 from multiprocessing import Pool, freeze_support
 from audioMints import config as cfg
 from audioMints import functions as fn
-
 
 sampleRate         = 44100  # Sample rate
 period             = 9 # Duration of recording
@@ -35,7 +38,8 @@ currentIndex = 0
 
 
 def main(cfg,currentIndex):
-    labels = pd.read_csv("audioMints/labels/labels.csv")  
+    labels = pd.read_csv("audioMints/labels/labels.csv") 
+    mSR.directoryCheck(tmpFolderName)
 
     while True:
         try:
@@ -47,78 +51,15 @@ def main(cfg,currentIndex):
             cfg = fn.configSetUp(cfg,tmpFolderName,minConfidence,numOfThreads)
             soundClassData = pd.read_csv(tmpFolderName + '/'+ audioFileNamePre+  '.BirdNET.results.csv')
             soundClassData["Labels"] = soundClassData["Scientific name"].map(labels.set_index("Scientific name")["Labels"])
-   
+            print(soundClassData)
             for index, row in soundClassData.iterrows():
                 sensorDictionary = OrderedDict([
                     ("dateTime"     ,str(dateTime + datetime.timedelta(seconds = row['Start (s)']))),
                     ("label"        ,row['Labels']),
                     ("confidence"   ,row['Confidence'])
                      ])
-                print(sensorDictionary)
-
-            #Getting Write Path
                 mSR.sensorFinisher(dateTime,"MBC001",sensorDictionary)
-                
-                
-                
-       
-
-
-
-            # print()
-            # print("Current Data")
-
-            # print("Currernt Index: " + str(currentIndex))
-            # print("Length        : " + str(df2.index))
-
-            # #  Record Last Time Stamp Taken
-            # print(len(df2.index) - currentIndex)
-
-            # if currentIndex < len(df2.index): 
-            #     print(df2.tail(len(df2.index) - currentIndex))
-
-            #     # for speciesNow in df2.tail(len(df2.index) - currentIndex):
-            #     #     print(speciesNow)
-
-            #     currentIndex =  len(df2.index);
-
-
-
-
-                
-                
-
-            # mv_lbl = pd.read_csv(tmpFolderName +"/final.csv")
-            # df_lbl = mv_lbl.pop("Labels")
-            # mv_lbl.insert(1,"Labels",df_lbl)
-            # mv_lbl.to_csv(tmpFolderName +"/final.csv", index= False)
-
-            # print(df_lbl[-1])
-
-            # #Drop Columns
-            # drop_col = pd.read_csv(tmpFolderName +'/final.csv')
-            # drop_col.drop(['End (s)', 'Scientific name', 'Common name'], inplace=True, axis= 1)
-            # drop_col.to_csv(tmpFolderName +'/final_result.csv', index = False)
-
-
-            # if 
-            
-
-            # sensorDictionary = OrderedDict([
-            #     ("dateTime"     ,str(dateTime)),
-            #     ("label"        ,labelIn),
-            #     ("confidence"   ,confIn)
-        	#      ])
-
-            #Getting Write Path
-            # mSR.sensorFinisher(dateTime,sensorName,sensorDictionary)
-
-
-
-
-
-
-
+      
             print("=============")
             print()
 
@@ -133,9 +74,6 @@ if __name__ == "__main__":
     print("=============")
     print("Connecting to the microphone on Channel: {0}".format(channelSelected) + " with Sample Rate " + str(sampleRate))
     main(cfg,currentIndex)    
-
-
-
 
 
 

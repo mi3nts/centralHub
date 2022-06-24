@@ -59,9 +59,10 @@ def loadCodes():
     return codes
 
 def loadLabels(labels_file):
-
+#  encoding="utf-8"
     labels = []
-    with open(labels_file, 'r') as lfile:
+  # Added on Friday June 24 
+    with open(labels_file, 'r', encoding="utf-8") as lfile:
         for line in lfile.readlines():
             labels.append(line.replace('\n', ''))    
 
@@ -468,5 +469,4 @@ def configSetUp(cfgIn,outPutPath,confidenceIn,cpuThreads):
 
 
     return cfgIn;
-
 
