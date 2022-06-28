@@ -29,6 +29,24 @@ The Central hub contains the following modules and it acts as the central data c
 - Gravity Sound Level Monitor  
 - Gravity Lightning Sensor 
 - In this repository the firmware contains a Python script built on BirdNET (https://github.com/kahst/BirdNET-Analyzer) which can identify birds based on their sound.
+- Create a virtual environment with the name birdsongs and install the required packages. 
+
+  ```
+  sudo apt-get install python3-venv
+  python3 -m venv birdSongs
+  source birdSongs/bin/activate
+  sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+  pip3 install sounddevice
+  pip3 install scipy
+  pip3 install -U pip setuptools
+  pip3  install pandas
+  pip3 install --extra-index-url https://google-coral.github.io/py-repo/ tflite_runtime
+  sudo apt-get install llvm-10 lldb-10 llvm-10-dev libllvm10 llvm-10-runtime
+  sudo update-alternatives --install /usr/bin/llvm-config llvm-config /usr/bin/llvm-config-10 10
+  sudo update-alternatives --config llvm-config
+  pip3 install llvmlite==0.35.0
+  pip3 install librosa==0.9.1
+  ```
 
 ## Main Module
 - XU4  
