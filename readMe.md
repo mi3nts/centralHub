@@ -47,6 +47,17 @@ The Central hub contains the following modules and it acts as the central data c
   pip3 install llvmlite==0.35.0
   pip3 install librosa==0.9.1
   ```
+ - Install the following packages to deal with the data through MQTT
+  
+  ```
+  pip3 install pyserial
+  pip3 install paho-mqtt
+  pip3 install pyyaml==5.4.1
+  pip3 install getmac
+  pip3 install pynmea2
+  pip3 install netifaces
+  
+  ```
 
 ## Main Module
 - XU4  
