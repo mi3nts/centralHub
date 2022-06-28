@@ -27,7 +27,8 @@ The Central hub contains the following modules and it acts as the central data c
 - USB Mic:                    
 - USB Sound Car Sabrent       
 - Gravity Sound Level Monitor  
-- Gravity Lightning Sensor    
+- Gravity Lightning Sensor 
+- In this repository the firmware contains a Python script built on BirdNET (https://github.com/kahst/BirdNET-Analyzer) which can identify birds based on their sound.
 
 ## Main Module
 - XU4  
