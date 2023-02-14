@@ -25,6 +25,10 @@ kill $(pgrep -f 'python3 ozoneQLMDuoReader.py 1')
 sleep 5
 python3 ozoneQLMDuoReader.py 1 &
 sleep 5
+kill $(pgrep -f 'python3 rainReader.py')
+sleep 5
+python3 rainReader.py &
+sleep 5
 kill $(pgrep -f 'python3 GPSReader.py')
 sleep 5
 python3 GPSReader.py &
