@@ -103,6 +103,7 @@ duePort               = findDuePort()
 nanoPorts             = findNanoPorts()
 ozonePort             = findOzonePort()
 ipsPorts              = findIPSPorts()
+rg15Ports             = findRG15Ports()
 show2Port             = findPort("CP2104 USB to UART Bridge Controller")
 macAddress            = findMacAddress()
 latestDisplayOn       = False
