@@ -9,6 +9,15 @@ def findPort(find):
         if(currentPort.endswith(find)):
             return(currentPort.split(" ")[0])
 
+        
+def findRG15Ports():
+    ports = list(serial.tools.list_ports.comports())
+    rg15Ports = []
+    for p in ports:
+        currentPort = str(p[2])
+        if(currentPort.find("PID=0403")>=0):
+            rg15Ports.append(str(p[0]).split(" ")[0])
+    return rg15Ports        
 
 def findDuePort():
     ports = list(serial.tools.list_ports.comports())
@@ -129,7 +138,11 @@ if __name__ == "__main__":
     print("Ozone Ports :")
     for dev in ozonePort:
         print("\t{0}".format(dev))
-    
+        
+   #-------------------------------------------#
+    print("RG15 Ports :")
+    for dev in rg15Ports:
+        print("\t{0}".format(dev))  
     
     #-------------------------------------------#
     print("IPS Ports :")
