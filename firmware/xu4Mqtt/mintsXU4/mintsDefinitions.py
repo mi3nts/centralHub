@@ -116,7 +116,7 @@ mqttBroker               = "mqtt.circ.utdallas.edu"
 mqttPort                 =  8883  # Secure port
 
 
-gpsPort               = findPort("GPS/GNSS Receiver")
+gpsPort               = findPort("u-blox")
 
 
 if __name__ == "__main__":
