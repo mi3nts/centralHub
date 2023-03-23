@@ -9,6 +9,14 @@ def findPort(find):
         if(currentPort.endswith(find)):
             return(currentPort.split(" ")[0])
 
+def findPortV2(find):
+    ports = list(serial.tools.list_ports.comports())
+    for p in ports:
+        currentPort = str(p)
+        if(currentPort.find(find)>0):
+            return(currentPort.split(" ")[0])
+          
+          
         
 def findRG15Ports():
     ports = list(serial.tools.list_ports.comports())
@@ -116,7 +124,7 @@ mqttBroker               = "mqtt.circ.utdallas.edu"
 mqttPort                 =  8883  # Secure port
 
 
-gpsPort               = findPort("u-blox")
+gpsPort               = findPortV2("u-blox")
 
 
 if __name__ == "__main__":
