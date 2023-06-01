@@ -93,9 +93,10 @@ def main(firstReset,firstResolutionSetup,firstMetricSystemSetup,loopInterval):
                         time.sleep(5)
                         
                     line = []
-                    sendChars("Read Command Sent",ser,'R\r\n',1)   
+#                     sendChars("Read Command Sent",ser,'R\r\n',1)   
                     startTime = delayMints(time.time() - startTime,loopInterval)
-
+                    sendChars("Read Command Sent",ser,'R\r\n',1)   
+		
         except Exception as e:
             time.sleep(.5)
             print ("Error and type: %s - %s." % (e,type(e)))
